@@ -1,0 +1,106 @@
+\hypertarget{class_static_text}{}\doxysection{Static\+Text Class Reference}
+\label{class_static_text}\index{StaticText@{StaticText}}
+
+
+A \mbox{\hyperlink{class_static_text}{Static\+Text}}.  
+
+
+
+
+{\ttfamily \#include $<$Static\+Text.\+h$>$}
+
+Inheritance diagram for Static\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_static_text}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_static_text_a856670d7fbf7f413c53faaee3b09da8d}{Static\+Text}} (const std\+::string text, const sf\+::\+Vector2f pos, const unsigned int character\+Size, const sf\+::\+Color \&colour)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_static_text_a44fb0cbb9990c283e80062e6d3f0c89b}{contains}} (sf\+::\+Vector2f pos) override
+\begin{DoxyCompactList}\small\item\em Does this object contain the point passed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_static_text_aa511a26e5617dfde94fa1da83d0a0025}{update}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game) override
+\begin{DoxyCompactList}\small\item\em Update the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_static_text}{Static\+Text}}. 
+
+A \mbox{\hyperlink{class_static_text}{Static\+Text}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_static_text_a856670d7fbf7f413c53faaee3b09da8d}\label{class_static_text_a856670d7fbf7f413c53faaee3b09da8d}} 
+\index{StaticText@{StaticText}!StaticText@{StaticText}}
+\index{StaticText@{StaticText}!StaticText@{StaticText}}
+\doxysubsubsection{\texorpdfstring{StaticText()}{StaticText()}}
+{\footnotesize\ttfamily Static\+Text\+::\+Static\+Text (\begin{DoxyParamCaption}\item[{const std\+::string}]{text,  }\item[{const sf\+::\+Vector2f}]{pos,  }\item[{const unsigned int}]{character\+Size,  }\item[{const sf\+::\+Color \&}]{colour }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a const std\+::string -\/ The text contents to display \\
+\hline
+{\em pos} & a const sf\+::\+Vector2f -\/ The position of the object \\
+\hline
+{\em character\+Size} & a const unsigned int -\/ The character size of the text \\
+\hline
+{\em colour} & a const sf\+::\+Colour\& -\/ The colour of the text \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_static_text_a44fb0cbb9990c283e80062e6d3f0c89b}\label{class_static_text_a44fb0cbb9990c283e80062e6d3f0c89b}} 
+\index{StaticText@{StaticText}!contains@{contains}}
+\index{contains@{contains}!StaticText@{StaticText}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Static\+Text\+::contains (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Does this object contain the point passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const sf\+::\+Vector2f -\/ The point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the object contain the point 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_aaf7740bd2bc2f463c46a0c9f69e34b83}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_static_text_aa511a26e5617dfde94fa1da83d0a0025}\label{class_static_text_aa511a26e5617dfde94fa1da83d0a0025}} 
+\index{StaticText@{StaticText}!update@{update}}
+\index{update@{update}!StaticText@{StaticText}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Static\+Text\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a7d45aca280e5d79408cb70b6d8689ff0}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Game\+Objects/\+Objects/\+U\+I/\mbox{\hyperlink{_static_text_8h}{Static\+Text.\+h}}\item 
+C\+:/doc/src/src/\+Game\+Objects/\+Objects/\+U\+I/\mbox{\hyperlink{_static_text_8cpp}{Static\+Text.\+cpp}}\end{DoxyCompactItemize}

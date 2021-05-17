@@ -1,0 +1,187 @@
+\hypertarget{class_level}{}\doxysection{Level Class Reference}
+\label{class_level}\index{Level@{Level}}
+
+
+A \mbox{\hyperlink{class_level}{Level}}.  
+
+
+
+
+{\ttfamily \#include $<$Level.\+h$>$}
+
+Inheritance diagram for Level\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_level}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_level_a14557e9d4ef567176801c6e5b004d404}{Level}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_level_a249eac1e8f19ff44134efa5e986feaca}{$\sim$\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_a2de73e97209a925825618be92c31cb47}{init\+Scene}} () override
+\begin{DoxyCompactList}\small\item\em Initialise the level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_a15e659a33ae6389046ab78474aeab149}{set\+Physics\+Draw}} (const bool \mbox{\hyperlink{class_level_a94f496376dd25c9020b3d5f1052fe4ec}{draw}})
+\begin{DoxyCompactList}\small\item\em Set whether to draw the raw physics components. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_level_a2acf2324f11dcea752a168cef50dd7f9}{get\+Physics\+Draw}} () const
+\begin{DoxyCompactList}\small\item\em Returns whether to draw the raw physics components. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_a27d847ccf948284f6ec388108d1a2a3c}{clear\+Scene}} () override
+\begin{DoxyCompactList}\small\item\em Clears the level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_a93352bfc57fc952697030edb9af41539}{restart\+Clocks}} ()
+\begin{DoxyCompactList}\small\item\em Restarts the animation clock. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_ac0dbe79a73102c969fbfeb70a609ad5a}{update}} (const float \&timestep) override
+\begin{DoxyCompactList}\small\item\em Update the level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_a94f496376dd25c9020b3d5f1052fe4ec}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const override
+\begin{DoxyCompactList}\small\item\em Draw the level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_level}{Level}}. 
+
+A \mbox{\hyperlink{class_level}{Level}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_level_a14557e9d4ef567176801c6e5b004d404}\label{class_level_a14557e9d4ef567176801c6e5b004d404}} 
+\index{Level@{Level}!Level@{Level}}
+\index{Level@{Level}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{Level()}{Level()}}
+{\footnotesize\ttfamily Level\+::\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_level_a249eac1e8f19ff44134efa5e986feaca}\label{class_level_a249eac1e8f19ff44134efa5e986feaca}} 
+\index{Level@{Level}!````~Level@{$\sim$Level}}
+\index{````~Level@{$\sim$Level}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{$\sim$Level()}{~Level()}}
+{\footnotesize\ttfamily Level\+::$\sim$\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destructor() 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_level_a27d847ccf948284f6ec388108d1a2a3c}\label{class_level_a27d847ccf948284f6ec388108d1a2a3c}} 
+\index{Level@{Level}!clearScene@{clearScene}}
+\index{clearScene@{clearScene}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{clearScene()}{clearScene()}}
+{\footnotesize\ttfamily void Level\+::clear\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clears the level. 
+
+\mbox{\hyperlink{class_level_a27d847ccf948284f6ec388108d1a2a3c}{clear\+Scene()}} 
+
+Reimplemented from \mbox{\hyperlink{class_scene_a9a6078cc3fc29516f5409544ebd78c39}{Scene}}.
+
+\mbox{\Hypertarget{class_level_a94f496376dd25c9020b3d5f1052fe4ec}\label{class_level_a94f496376dd25c9020b3d5f1052fe4ec}} 
+\index{Level@{Level}!draw@{draw}}
+\index{draw@{draw}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Level\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Draw the level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & a sf\+::\+Render\+Target \& -\/ A reference to the Render\+Target \\
+\hline
+{\em states} & a sf\+::\+Render\+States -\/ A render state \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_scene_a59f6013c3baaaaa0124501bbafc138fd}{Scene}}.
+
+\mbox{\Hypertarget{class_level_a2acf2324f11dcea752a168cef50dd7f9}\label{class_level_a2acf2324f11dcea752a168cef50dd7f9}} 
+\index{Level@{Level}!getPhysicsDraw@{getPhysicsDraw}}
+\index{getPhysicsDraw@{getPhysicsDraw}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getPhysicsDraw()}{getPhysicsDraw()}}
+{\footnotesize\ttfamily bool Level\+::get\+Physics\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Returns whether to draw the raw physics components. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Whether to draw the physical components 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_level_a2de73e97209a925825618be92c31cb47}\label{class_level_a2de73e97209a925825618be92c31cb47}} 
+\index{Level@{Level}!initScene@{initScene}}
+\index{initScene@{initScene}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{initScene()}{initScene()}}
+{\footnotesize\ttfamily void Level\+::init\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialise the level. 
+
+\mbox{\hyperlink{class_level_a2de73e97209a925825618be92c31cb47}{init\+Scene()}} 
+
+Implements \mbox{\hyperlink{class_scene_ae76b830c1156bb40bd744afb63776be2}{Scene}}.
+
+\mbox{\Hypertarget{class_level_a93352bfc57fc952697030edb9af41539}\label{class_level_a93352bfc57fc952697030edb9af41539}} 
+\index{Level@{Level}!restartClocks@{restartClocks}}
+\index{restartClocks@{restartClocks}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{restartClocks()}{restartClocks()}}
+{\footnotesize\ttfamily void Level\+::restart\+Clocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Restarts the animation clock. 
+
+\mbox{\hyperlink{class_level_a93352bfc57fc952697030edb9af41539}{restart\+Clocks()}} \mbox{\Hypertarget{class_level_a15e659a33ae6389046ab78474aeab149}\label{class_level_a15e659a33ae6389046ab78474aeab149}} 
+\index{Level@{Level}!setPhysicsDraw@{setPhysicsDraw}}
+\index{setPhysicsDraw@{setPhysicsDraw}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{setPhysicsDraw()}{setPhysicsDraw()}}
+{\footnotesize\ttfamily void Level\+::set\+Physics\+Draw (\begin{DoxyParamCaption}\item[{const bool}]{draw }\end{DoxyParamCaption})}
+
+
+
+Set whether to draw the raw physics components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em draw} & a bool -\/ Draw the physical components \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_level_ac0dbe79a73102c969fbfeb70a609ad5a}\label{class_level_ac0dbe79a73102c969fbfeb70a609ad5a}} 
+\index{Level@{Level}!update@{update}}
+\index{update@{update}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Level\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{timestep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float\& -\/ The game update timestep \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_a8a9da839669ad78604b2cac52d5e0470}{Scene}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Scene/\+Scenes/\mbox{\hyperlink{_level_8h}{Level.\+h}}\item 
+C\+:/doc/src/src/\+Scene/\+Scenes/\mbox{\hyperlink{_level_8cpp}{Level.\+cpp}}\end{DoxyCompactItemize}

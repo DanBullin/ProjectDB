@@ -1,0 +1,257 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+A \mbox{\hyperlink{class_player}{Player}}.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_a87d6af3f51d9790b12f2d6da6ef91839}{Player}} (b2\+World $\ast$world)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_a8db30a65cfe2865883a3b69aaad3f3ce}{contains}} (const sf\+::\+Vector2f pos) override
+\begin{DoxyCompactList}\small\item\em Does this object contain the point passed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_aa0e59bfb653c665b4635b49e5ba074ef}{update}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game) override
+\begin{DoxyCompactList}\small\item\em Update the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a6b91ea2b0fa28fed732961c535507528}{enter\+Collision}} (const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$collider, const bool fixture\+A\+Sensor, const bool fixture\+B\+Sensor) override
+\begin{DoxyCompactList}\small\item\em Enter collision action when this object collides. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a1557ea854181eaa23acc2e85d772c38e}{leave\+Collision}} (const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$collider, const bool fixture\+A\+Sensor, const bool fixture\+B\+Sensor) override
+\begin{DoxyCompactList}\small\item\em Leave collision action when this object collides. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ad70091a017479ff3208c39131f57f338}{key\+Press}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game, const int key) override
+\begin{DoxyCompactList}\small\item\em Action to run when a key is pressed. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a730c7d8eb4bc24e946ead0aeb82a58e3}{key\+Release}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game, const int key) override
+\begin{DoxyCompactList}\small\item\em Action to run when a key is released. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_adfbf4c6a43f12a75ac1764304dcf04d9}{animation\+Update}} () override
+\begin{DoxyCompactList}\small\item\em The animation update. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_player_a3b918f5e59228cdd3d48442c4345571f}{get\+Gems\+Collected}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of gems collected. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_player_aa539dfd420f1c7545c2e895d4528e5ce}{get\+Lives}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of player lives. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_abb4ddcabbfdd732f5dbccfb93552c3e5}{get\+Key\+Collected}} () const
+\begin{DoxyCompactList}\small\item\em Get if the key has been collected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_player}{Player}}. 
+
+A \mbox{\hyperlink{class_player}{Player}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_a87d6af3f51d9790b12f2d6da6ef91839}\label{class_player_a87d6af3f51d9790b12f2d6da6ef91839}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & a b2\+World$\ast$ -\/ A pointer to the B\+O\+X2D world \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_adfbf4c6a43f12a75ac1764304dcf04d9}\label{class_player_adfbf4c6a43f12a75ac1764304dcf04d9}} 
+\index{Player@{Player}!animationUpdate@{animationUpdate}}
+\index{animationUpdate@{animationUpdate}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{animationUpdate()}{animationUpdate()}}
+{\footnotesize\ttfamily void Player\+::animation\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+The animation update. 
+
+\mbox{\hyperlink{class_player_adfbf4c6a43f12a75ac1764304dcf04d9}{animation\+Update()}} 
+
+Reimplemented from \mbox{\hyperlink{class_game_object_aaf18f570c847ed0133c1f2a8e32b337a}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_player_a8db30a65cfe2865883a3b69aaad3f3ce}\label{class_player_a8db30a65cfe2865883a3b69aaad3f3ce}} 
+\index{Player@{Player}!contains@{contains}}
+\index{contains@{contains}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Player\+::contains (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Does this object contain the point passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const sf\+::\+Vector2f -\/ The point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the object contain the point 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_aaf7740bd2bc2f463c46a0c9f69e34b83}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_player_a6b91ea2b0fa28fed732961c535507528}\label{class_player_a6b91ea2b0fa28fed732961c535507528}} 
+\index{Player@{Player}!enterCollision@{enterCollision}}
+\index{enterCollision@{enterCollision}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{enterCollision()}{enterCollision()}}
+{\footnotesize\ttfamily void Player\+::enter\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{collider,  }\item[{const bool}]{fixture\+A\+Sensor,  }\item[{const bool}]{fixture\+B\+Sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Enter collision action when this object collides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & a Physics\+Object$\ast$ -\/ A pointer to the collding object \\
+\hline
+{\em fixture\+A\+Sensor} & a const bool -\/ Is this object a sensor \\
+\hline
+{\em fixture\+B\+Sensor} & a const bool -\/ Is the colliding object a sensor \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_physics_object_a8a445999733ebc0511e39986a1c0c7a6}{Physics\+Object}}.
+
+\mbox{\Hypertarget{class_player_a3b918f5e59228cdd3d48442c4345571f}\label{class_player_a3b918f5e59228cdd3d48442c4345571f}} 
+\index{Player@{Player}!getGemsCollected@{getGemsCollected}}
+\index{getGemsCollected@{getGemsCollected}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getGemsCollected()}{getGemsCollected()}}
+{\footnotesize\ttfamily unsigned int Player\+::get\+Gems\+Collected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of gems collected. 
+
+\begin{DoxyReturn}{Returns}
+an unsigned int -\/ The number of gems collected by the player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_abb4ddcabbfdd732f5dbccfb93552c3e5}\label{class_player_abb4ddcabbfdd732f5dbccfb93552c3e5}} 
+\index{Player@{Player}!getKeyCollected@{getKeyCollected}}
+\index{getKeyCollected@{getKeyCollected}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getKeyCollected()}{getKeyCollected()}}
+{\footnotesize\ttfamily bool Player\+::get\+Key\+Collected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get if the key has been collected. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Has the player collected the key 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_aa539dfd420f1c7545c2e895d4528e5ce}\label{class_player_aa539dfd420f1c7545c2e895d4528e5ce}} 
+\index{Player@{Player}!getLives@{getLives}}
+\index{getLives@{getLives}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getLives()}{getLives()}}
+{\footnotesize\ttfamily unsigned int Player\+::get\+Lives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of player lives. 
+
+\begin{DoxyReturn}{Returns}
+an unsigned int -\/ The number of lives the player has 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_ad70091a017479ff3208c39131f57f338}\label{class_player_ad70091a017479ff3208c39131f57f338}} 
+\index{Player@{Player}!keyPress@{keyPress}}
+\index{keyPress@{keyPress}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{keyPress()}{keyPress()}}
+{\footnotesize\ttfamily void Player\+::key\+Press (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game,  }\item[{const int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Action to run when a key is pressed. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+{\em key} & a const int -\/ The key pressed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_object_aa31f653d18dbd23439ec6c131c06250f}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_player_a730c7d8eb4bc24e946ead0aeb82a58e3}\label{class_player_a730c7d8eb4bc24e946ead0aeb82a58e3}} 
+\index{Player@{Player}!keyRelease@{keyRelease}}
+\index{keyRelease@{keyRelease}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{keyRelease()}{keyRelease()}}
+{\footnotesize\ttfamily void Player\+::key\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game,  }\item[{const int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Action to run when a key is released. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+{\em key} & a const int -\/ The key released \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_object_a3ea6b12576af812470f9cd74f20d7a44}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_player_a1557ea854181eaa23acc2e85d772c38e}\label{class_player_a1557ea854181eaa23acc2e85d772c38e}} 
+\index{Player@{Player}!leaveCollision@{leaveCollision}}
+\index{leaveCollision@{leaveCollision}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{leaveCollision()}{leaveCollision()}}
+{\footnotesize\ttfamily void Player\+::leave\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{collider,  }\item[{const bool}]{fixture\+A\+Sensor,  }\item[{const bool}]{fixture\+B\+Sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Leave collision action when this object collides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & a Physics\+Object$\ast$ -\/ A pointer to the collding object \\
+\hline
+{\em fixture\+A\+Sensor} & a const bool -\/ Is this object a sensor \\
+\hline
+{\em fixture\+B\+Sensor} & a const bool -\/ Is the colliding object a sensor \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_physics_object_a52a7e1affe312a862aa2f1c5d30d48b3}{Physics\+Object}}.
+
+\mbox{\Hypertarget{class_player_aa0e59bfb653c665b4635b49e5ba074ef}\label{class_player_aa0e59bfb653c665b4635b49e5ba074ef}} 
+\index{Player@{Player}!update@{update}}
+\index{update@{update}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Player\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a7d45aca280e5d79408cb70b6d8689ff0}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Game\+Objects/\+Objects/\+Physics/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+C\+:/doc/src/src/\+Game\+Objects/\+Objects/\+Physics/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

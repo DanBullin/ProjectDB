@@ -1,0 +1,109 @@
+\hypertarget{class_shader}{}\doxysection{Shader Class Reference}
+\label{class_shader}\index{Shader@{Shader}}
+
+
+A \mbox{\hyperlink{class_shader}{Shader}}.  
+
+
+
+
+{\ttfamily \#include $<$Shader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shader_a0d654ebaca4e0555197c0724c6d30610}\label{class_shader_a0d654ebaca4e0555197c0724c6d30610}} 
+\mbox{\hyperlink{class_shader_a0d654ebaca4e0555197c0724c6d30610}{Shader}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shader_aff01df87e8a102f270b5b135a295e59d}\label{class_shader_aff01df87e8a102f270b5b135a295e59d}} 
+\mbox{\hyperlink{class_shader_aff01df87e8a102f270b5b135a295e59d}{$\sim$\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_shader_ab4475ae527e3ce5354ca053ac5c70167}{get\+Shader\+S\+RC}} (std\+::string shader\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Gets the source code of the shader from the file location passed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_a597a81b623dc773af1dd506e72370cc0}{compile\+Shader}} (G\+Luint \&shader\+ID, G\+Lenum type, std\+::string src)
+\begin{DoxyCompactList}\small\item\em Compiles the shader source code passed to particular shader handle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_a8cd68191ca7f7430ed37384d1d78b5a8}{create\+Shader}} (std\+::string vertex\+File\+Path, std\+::string fragment\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Creates a vertex and fragment shader from the source code file locations passed. \end{DoxyCompactList}\item 
+G\+Luint \mbox{\hyperlink{class_shader_ab3b6ebf2670424320d518f417a676fc2}{get\+Program}} ()
+\begin{DoxyCompactList}\small\item\em Returns the handle to the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_shader}{Shader}}. 
+
+Creates, compiles and links a shader from the file location passed~\newline
+The passing of a file location gives the shader more flexibity so there is no hardcoded shader in this object~\newline
+\mbox{\hyperlink{class_shader_a8cd68191ca7f7430ed37384d1d78b5a8}{create\+Shader()}} will destroy the current program held by this object and create a new one so becareful~\newline
+Program will terminate if there\textquotesingle{}s any errors 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shader_a597a81b623dc773af1dd506e72370cc0}\label{class_shader_a597a81b623dc773af1dd506e72370cc0}} 
+\index{Shader@{Shader}!compileShader@{compileShader}}
+\index{compileShader@{compileShader}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{compileShader()}{compileShader()}}
+{\footnotesize\ttfamily void Shader\+::compile\+Shader (\begin{DoxyParamCaption}\item[{G\+Luint \&}]{shader\+ID,  }\item[{G\+Lenum}]{type,  }\item[{std\+::string}]{src }\end{DoxyParamCaption})}
+
+
+
+Compiles the shader source code passed to particular shader handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader\+ID} & a G\+Luint -\/ An ID to the shader object being created \\
+\hline
+{\em type} & a G\+Lenum -\/ The type of shader being created (G\+L\+\_\+\+V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER $\vert$$\vert$ G\+L\+\_\+\+F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER) \\
+\hline
+{\em src} & a std\+::string -\/ The shader source code \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_a8cd68191ca7f7430ed37384d1d78b5a8}\label{class_shader_a8cd68191ca7f7430ed37384d1d78b5a8}} 
+\index{Shader@{Shader}!createShader@{createShader}}
+\index{createShader@{createShader}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{createShader()}{createShader()}}
+{\footnotesize\ttfamily void Shader\+::create\+Shader (\begin{DoxyParamCaption}\item[{std\+::string}]{vertex\+File\+Path,  }\item[{std\+::string}]{fragment\+File\+Path }\end{DoxyParamCaption})}
+
+
+
+Creates a vertex and fragment shader from the source code file locations passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+File\+Path} & a std\+::string -\/ A file path location to the vertex shader source code \\
+\hline
+{\em fragment\+File\+Path} & a std\+::string -\/ A file path location to the fragment shader source code \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_ab3b6ebf2670424320d518f417a676fc2}\label{class_shader_ab3b6ebf2670424320d518f417a676fc2}} 
+\index{Shader@{Shader}!getProgram@{getProgram}}
+\index{getProgram@{getProgram}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{getProgram()}{getProgram()}}
+{\footnotesize\ttfamily G\+Luint Shader\+::get\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the handle to the program. 
+
+\begin{DoxyReturn}{Returns}
+a G\+Luint -\/ The handle to the program 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_shader_ab4475ae527e3ce5354ca053ac5c70167}\label{class_shader_ab4475ae527e3ce5354ca053ac5c70167}} 
+\index{Shader@{Shader}!getShaderSRC@{getShaderSRC}}
+\index{getShaderSRC@{getShaderSRC}!Shader@{Shader}}
+\doxysubsubsection{\texorpdfstring{getShaderSRC()}{getShaderSRC()}}
+{\footnotesize\ttfamily std\+::string Shader\+::get\+Shader\+S\+RC (\begin{DoxyParamCaption}\item[{std\+::string}]{shader\+File\+Path }\end{DoxyParamCaption})}
+
+
+
+Gets the source code of the shader from the file location passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader\+File\+Path} & a std\+::string -\/ A file path location to the shader source code \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\mbox{\hyperlink{_shader_8h}{Shader.\+h}}\item 
+C\+:/doc/src/src/\mbox{\hyperlink{_shader_8cpp}{Shader.\+cpp}}\end{DoxyCompactItemize}

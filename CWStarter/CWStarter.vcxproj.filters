@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Events">
+      <UniqueIdentifier>{4D67AC00-3935-A006-22C9-102D0E367C6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GameObjects">
+      <UniqueIdentifier>{FC4F750E-68B1-521C-F11E-99CE5D7F89DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GameObjects\Objects">
+      <UniqueIdentifier>{B52A73D2-2138-A1B8-AA1E-9DA3162B6D6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GameObjects\Objects\Physics">
+      <UniqueIdentifier>{2713A9C5-93CC-1370-1C2C-2E4A88E4C9DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GameObjects\Objects\UI">
+      <UniqueIdentifier>{C2FDFEB8-AE23-C91F-9769-4EEB832EEEEB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Managers">
+      <UniqueIdentifier>{86FBF602-72F4-1555-9B26-FBD9877EF560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Maths">
+      <UniqueIdentifier>{B57273A3-2133-EFD9-EA6D-385756ED33B6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Physics">
+      <UniqueIdentifier>{FB2BBE45-67B7-2B0A-70C8-AEFEDCD2870A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Scene">
+      <UniqueIdentifier>{66DFE0A3-D29F-5CDA-9BDA-A557075AA1B6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Scene\Scenes">
+      <UniqueIdentifier>{D6E150ED-C270-DAB6-6B8F-EEB157FDEA5C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Events">
+      <UniqueIdentifier>{7162C20E-5D1A-045C-C621-DDB7B2F89E4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObjects">
+      <UniqueIdentifier>{A0E17904-0C6D-E7C8-157E-6ABD818843C9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObjects\Objects">
+      <UniqueIdentifier>{592031A8-C557-793F-CE61-DD623A18A038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObjects\Objects\Physics">
+      <UniqueIdentifier>{CB6C44C0-3750-5300-4053-813CACB51951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObjects\Objects\UI">
+      <UniqueIdentifier>{E6C04E98-D2D0-FA68-3B8A-5F8727B9E901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Managers">
+      <UniqueIdentifier>{AA4F78EE-96B2-0793-3F38-40492B7AD315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Maths">
+      <UniqueIdentifier>{599964B3-C503-192A-0E42-CACF7AEBF67E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Physics">
+      <UniqueIdentifier>{9F8B9316-0B41-0C0C-9435-06E300EA0210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{0A06D2B3-7670-862A-BFAE-37D02B58647F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene\Scenes">
+      <UniqueIdentifier>{FAA7E7A3-E6A0-06F6-0FD3-EB7AFB2AE601}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Events\EventListener.h">
+      <Filter>include\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Game.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\GameObject.h">
+      <Filter>include\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\Box.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\Door.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\DoorSensor.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\Enemy.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\Gem.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\GravitySwitch.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\IronDoor.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\Key.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\Lava.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\MovingPlatform.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\Player.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\RevolvingPlatform.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\Physics\StaticBlock.h">
+      <Filter>include\GameObjects\Objects\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\StaticImage.h">
+      <Filter>include\GameObjects\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\UI\DynamicText.h">
+      <Filter>include\GameObjects\Objects\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\UI\KeyIcon.h">
+      <Filter>include\GameObjects\Objects\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\Objects\UI\StaticText.h">
+      <Filter>include\GameObjects\Objects\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\PhysicsMaker.h">
+      <Filter>include\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObjects\PhysicsObject.h">
+      <Filter>include\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Managers\ResourceManager.h">
+      <Filter>include\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Maths\VectorDistance.h">
+      <Filter>include\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics\ContactListener.h">
+      <Filter>include\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics\SFMLDebugDraw.h">
+      <Filter>include\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Scene.h">
+      <Filter>include\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Scenes\GameOver.h">
+      <Filter>include\Scene\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Scenes\Level.h">
+      <Filter>include\Scene\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Scenes\MainMenu.h">
+      <Filter>include\Scene\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Scenes\Pause.h">
+      <Filter>include\Scene\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Window.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Events\EventListener.cpp">
+      <Filter>src\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\GameObject.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\Box.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\Door.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\DoorSensor.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\Enemy.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\Gem.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\GravitySwitch.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\IronDoor.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\Key.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\Lava.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\MovingPlatform.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\Player.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\RevolvingPlatform.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\Physics\StaticBlock.cpp">
+      <Filter>src\GameObjects\Objects\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\StaticImage.cpp">
+      <Filter>src\GameObjects\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\UI\DynamicText.cpp">
+      <Filter>src\GameObjects\Objects\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\UI\KeyIcon.cpp">
+      <Filter>src\GameObjects\Objects\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\Objects\UI\StaticText.cpp">
+      <Filter>src\GameObjects\Objects\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\PhysicsMaker.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObjects\PhysicsObject.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Managers\ResourceManager.cpp">
+      <Filter>src\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Maths\VectorDistance.cpp">
+      <Filter>src\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics\ContactListener.cpp">
+      <Filter>src\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics\SFMLDebugDraw.cpp">
+      <Filter>src\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Scene.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Scenes\GameOver.cpp">
+      <Filter>src\Scene\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Scenes\Level.cpp">
+      <Filter>src\Scene\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Scenes\MainMenu.cpp">
+      <Filter>src\Scene\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Scenes\Pause.cpp">
+      <Filter>src\Scene\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\loadFonts.txt" />
+    <Text Include="assets\loadTextures.txt" />
+  </ItemGroup>
+</Project>

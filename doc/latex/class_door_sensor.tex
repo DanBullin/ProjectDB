@@ -1,0 +1,131 @@
+\hypertarget{class_door_sensor}{}\doxysection{Door\+Sensor Class Reference}
+\label{class_door_sensor}\index{DoorSensor@{DoorSensor}}
+
+
+A \mbox{\hyperlink{class_door_sensor}{Door\+Sensor}}.  
+
+
+
+
+{\ttfamily \#include $<$Door\+Sensor.\+h$>$}
+
+Inheritance diagram for Door\+Sensor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_door_sensor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_door_sensor_a45b8ca096862b5ce6606f81bb3059fd8}{Door\+Sensor}} (b2\+World $\ast$world, const sf\+::\+Vector2f \&position, \mbox{\hyperlink{class_iron_door}{Iron\+Door}} $\ast$door1, \mbox{\hyperlink{class_iron_door}{Iron\+Door}} $\ast$door2)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_door_sensor_a3cc9075d52126f9178d69462769d14c6}{contains}} (const sf\+::\+Vector2f pos) override
+\begin{DoxyCompactList}\small\item\em Does this object contain the point passed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_door_sensor_a5b309556b6872c7f4b1adc9681388581}{update}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game) override
+\begin{DoxyCompactList}\small\item\em Update the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_door_sensor_ad7d6ea15672d08c6a3c647ee4108947a}{enter\+Collision}} (const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$collider, const bool fixture\+A\+Sensor, const bool fixture\+B\+Sensor) override
+\begin{DoxyCompactList}\small\item\em Enter collision action when this object collides. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_door_sensor}{Door\+Sensor}}. 
+
+A \mbox{\hyperlink{class_door_sensor}{Door\+Sensor}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_door_sensor_a45b8ca096862b5ce6606f81bb3059fd8}\label{class_door_sensor_a45b8ca096862b5ce6606f81bb3059fd8}} 
+\index{DoorSensor@{DoorSensor}!DoorSensor@{DoorSensor}}
+\index{DoorSensor@{DoorSensor}!DoorSensor@{DoorSensor}}
+\doxysubsubsection{\texorpdfstring{DoorSensor()}{DoorSensor()}}
+{\footnotesize\ttfamily Door\+Sensor\+::\+Door\+Sensor (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{const sf\+::\+Vector2f \&}]{position,  }\item[{\mbox{\hyperlink{class_iron_door}{Iron\+Door}} $\ast$}]{door1,  }\item[{\mbox{\hyperlink{class_iron_door}{Iron\+Door}} $\ast$}]{door2 }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & a b2\+World$\ast$ -\/ A pointer to the B\+O\+X2D world \\
+\hline
+{\em position} & a const sf\+::\+Vector2f\& -\/ The position of the \mbox{\hyperlink{class_door_sensor}{Door\+Sensor}} \\
+\hline
+{\em door1} & a Iron\+Door$\ast$ -\/ A pointer to the first iron door \\
+\hline
+{\em door2} & a Iron\+Door$\ast$ -\/ A pointer to the second iron door \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_door_sensor_a3cc9075d52126f9178d69462769d14c6}\label{class_door_sensor_a3cc9075d52126f9178d69462769d14c6}} 
+\index{DoorSensor@{DoorSensor}!contains@{contains}}
+\index{contains@{contains}!DoorSensor@{DoorSensor}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Door\+Sensor\+::contains (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Does this object contain the point passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const sf\+::\+Vector2f -\/ The point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the object contain the point 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_aaf7740bd2bc2f463c46a0c9f69e34b83}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_door_sensor_ad7d6ea15672d08c6a3c647ee4108947a}\label{class_door_sensor_ad7d6ea15672d08c6a3c647ee4108947a}} 
+\index{DoorSensor@{DoorSensor}!enterCollision@{enterCollision}}
+\index{enterCollision@{enterCollision}!DoorSensor@{DoorSensor}}
+\doxysubsubsection{\texorpdfstring{enterCollision()}{enterCollision()}}
+{\footnotesize\ttfamily void Door\+Sensor\+::enter\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{collider,  }\item[{const bool}]{fixture\+A\+Sensor,  }\item[{const bool}]{fixture\+B\+Sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Enter collision action when this object collides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & a Physics\+Object$\ast$ -\/ A pointer to the collding object \\
+\hline
+{\em fixture\+A\+Sensor} & a const bool -\/ Is this object a sensor \\
+\hline
+{\em fixture\+B\+Sensor} & a const bool -\/ Is the colliding object a sensor \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_physics_object_a8a445999733ebc0511e39986a1c0c7a6}{Physics\+Object}}.
+
+\mbox{\Hypertarget{class_door_sensor_a5b309556b6872c7f4b1adc9681388581}\label{class_door_sensor_a5b309556b6872c7f4b1adc9681388581}} 
+\index{DoorSensor@{DoorSensor}!update@{update}}
+\index{update@{update}!DoorSensor@{DoorSensor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Door\+Sensor\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a7d45aca280e5d79408cb70b6d8689ff0}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Game\+Objects/\+Objects/\+Physics/\mbox{\hyperlink{_door_sensor_8h}{Door\+Sensor.\+h}}\item 
+C\+:/doc/src/src/\+Game\+Objects/\+Objects/\+Physics/\mbox{\hyperlink{_door_sensor_8cpp}{Door\+Sensor.\+cpp}}\end{DoxyCompactItemize}

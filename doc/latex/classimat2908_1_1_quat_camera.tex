@@ -1,0 +1,300 @@
+\hypertarget{classimat2908_1_1_quat_camera}{}\doxysection{imat2908\+::Quat\+Camera Class Reference}
+\label{classimat2908_1_1_quat_camera}\index{imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classimat2908_1_1_quat_camera_afa09e7c09585a4c38342884d35df7cf3}{Quat\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+const glm\+::vec3 \& \mbox{\hyperlink{classimat2908_1_1_quat_camera_a6e3625c16fc116a32713de3ae96cc58d}{position}} () const
+\begin{DoxyCompactList}\small\item\em Get the camera position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimat2908_1_1_quat_camera_aeac311b066f57a737ed853b958eabbd9}{set\+Position}} (const glm\+::vec3 \&\mbox{\hyperlink{classimat2908_1_1_quat_camera_a6e3625c16fc116a32713de3ae96cc58d}{position}})
+\begin{DoxyCompactList}\small\item\em Set the camera position. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classimat2908_1_1_quat_camera_a2f3afdb9604cb75e455d919bff26a370}{field\+Of\+View}} () const
+\begin{DoxyCompactList}\small\item\em Get the field of view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimat2908_1_1_quat_camera_a8aacfcc63b7ac9a5669b02015fe5fae9}{set\+Field\+Of\+View}} (float \mbox{\hyperlink{classimat2908_1_1_quat_camera_a2f3afdb9604cb75e455d919bff26a370}{field\+Of\+View}})
+\begin{DoxyCompactList}\small\item\em Set the field of view. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classimat2908_1_1_quat_camera_a317b669ba266ba598b28c56c73d86aeb}{aspect\+Ratio}} () const
+\begin{DoxyCompactList}\small\item\em Get the aspect ratio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimat2908_1_1_quat_camera_a1aa94608351c89ff7d78a6b9a76a2e31}{set\+Aspect\+Ratio}} (float \mbox{\hyperlink{classimat2908_1_1_quat_camera_a317b669ba266ba598b28c56c73d86aeb}{aspect\+Ratio}})
+\begin{DoxyCompactList}\small\item\em Set the aspect ratio. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classimat2908_1_1_quat_camera_adbdce66fbe06d0422b608b6cce9bf3a4}{near\+Plane}} () const
+\begin{DoxyCompactList}\small\item\em Get the near plane. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classimat2908_1_1_quat_camera_a419ac12ac20c94c6de2ba25c03d991e1}{far\+Plane}} () const
+\begin{DoxyCompactList}\small\item\em Get the far plane. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimat2908_1_1_quat_camera_a040130458bd3e49c93a5af18843a10e2}{set\+Near\+And\+Far\+Planes}} (float \mbox{\hyperlink{classimat2908_1_1_quat_camera_adbdce66fbe06d0422b608b6cce9bf3a4}{near\+Plane}}, float \mbox{\hyperlink{classimat2908_1_1_quat_camera_a419ac12ac20c94c6de2ba25c03d991e1}{far\+Plane}})
+\begin{DoxyCompactList}\small\item\em Set the near and far plane. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimat2908_1_1_quat_camera_a6dd3d47d703dd58f12a7c9cba7fc3972}{rotate}} (const float yaw, const float pitch)
+\begin{DoxyCompactList}\small\item\em Rotate the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimat2908_1_1_quat_camera_a89e25ff49c57edb3eacf66b91de513c8}{pan}} (const float x, const float y)
+\begin{DoxyCompactList}\small\item\em Pan camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimat2908_1_1_quat_camera_a07e3adf1e0184051fe7d061cab5bbf1c}{roll}} (const float z)
+\begin{DoxyCompactList}\small\item\em Roll the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimat2908_1_1_quat_camera_a5eef94223c320f39ae87fa90ef00df5b}{zoom}} (const float z)
+\begin{DoxyCompactList}\small\item\em Zoom with camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimat2908_1_1_quat_camera_a9b94f303eebea7a511d337583355a36b}{update\+View}} ()
+\begin{DoxyCompactList}\small\item\em Update the camera\textquotesingle{}s view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classimat2908_1_1_quat_camera_ae04d42d9a01a51d125940056608282ab}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the camera properties. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{classimat2908_1_1_quat_camera_a5566f0072ba6f33b2f45080f41c5da8d}{view}} ()
+\begin{DoxyCompactList}\small\item\em Get the View matrix. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{classimat2908_1_1_quat_camera_a269313bdc0d8bfa0b9c26443cec30f88}{projection}} ()
+\begin{DoxyCompactList}\small\item\em Get the Projection matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_afa09e7c09585a4c38342884d35df7cf3}\label{classimat2908_1_1_quat_camera_afa09e7c09585a4c38342884d35df7cf3}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!QuatCamera@{QuatCamera}}
+\index{QuatCamera@{QuatCamera}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{QuatCamera()}{QuatCamera()}}
+{\footnotesize\ttfamily Quat\+Camera\+::\+Quat\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a317b669ba266ba598b28c56c73d86aeb}\label{classimat2908_1_1_quat_camera_a317b669ba266ba598b28c56c73d86aeb}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!aspectRatio@{aspectRatio}}
+\index{aspectRatio@{aspectRatio}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{aspectRatio()}{aspectRatio()}}
+{\footnotesize\ttfamily float Quat\+Camera\+::aspect\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the aspect ratio. 
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The aspect ratio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a419ac12ac20c94c6de2ba25c03d991e1}\label{classimat2908_1_1_quat_camera_a419ac12ac20c94c6de2ba25c03d991e1}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!farPlane@{farPlane}}
+\index{farPlane@{farPlane}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{farPlane()}{farPlane()}}
+{\footnotesize\ttfamily float Quat\+Camera\+::far\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the far plane. 
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The far plane 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a2f3afdb9604cb75e455d919bff26a370}\label{classimat2908_1_1_quat_camera_a2f3afdb9604cb75e455d919bff26a370}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!fieldOfView@{fieldOfView}}
+\index{fieldOfView@{fieldOfView}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{fieldOfView()}{fieldOfView()}}
+{\footnotesize\ttfamily float Quat\+Camera\+::field\+Of\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the field of view. 
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The field of view 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_adbdce66fbe06d0422b608b6cce9bf3a4}\label{classimat2908_1_1_quat_camera_adbdce66fbe06d0422b608b6cce9bf3a4}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!nearPlane@{nearPlane}}
+\index{nearPlane@{nearPlane}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{nearPlane()}{nearPlane()}}
+{\footnotesize\ttfamily float Quat\+Camera\+::near\+Plane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the near plane. 
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The near plane 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a89e25ff49c57edb3eacf66b91de513c8}\label{classimat2908_1_1_quat_camera_a89e25ff49c57edb3eacf66b91de513c8}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!pan@{pan}}
+\index{pan@{pan}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{pan()}{pan()}}
+{\footnotesize\ttfamily void Quat\+Camera\+::pan (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})}
+
+
+
+Pan camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a const float -\/ The amount to translate in x axis \\
+\hline
+{\em y} & a const float -\/ The amount to translate in y axis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a6e3625c16fc116a32713de3ae96cc58d}\label{classimat2908_1_1_quat_camera_a6e3625c16fc116a32713de3ae96cc58d}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!position@{position}}
+\index{position@{position}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{position()}{position()}}
+{\footnotesize\ttfamily const glm\+::vec3 \& Quat\+Camera\+::position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the camera position. 
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec3\& -\/ The position of the camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a269313bdc0d8bfa0b9c26443cec30f88}\label{classimat2908_1_1_quat_camera_a269313bdc0d8bfa0b9c26443cec30f88}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!projection@{projection}}
+\index{projection@{projection}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{projection()}{projection()}}
+{\footnotesize\ttfamily glm\+::mat4 Quat\+Camera\+::projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Projection matrix. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The projection matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_ae04d42d9a01a51d125940056608282ab}\label{classimat2908_1_1_quat_camera_ae04d42d9a01a51d125940056608282ab}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!reset@{reset}}
+\index{reset@{reset}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Quat\+Camera\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the camera properties. 
+
+\mbox{\hyperlink{classimat2908_1_1_quat_camera_ae04d42d9a01a51d125940056608282ab}{reset()}} \mbox{\Hypertarget{classimat2908_1_1_quat_camera_a07e3adf1e0184051fe7d061cab5bbf1c}\label{classimat2908_1_1_quat_camera_a07e3adf1e0184051fe7d061cab5bbf1c}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!roll@{roll}}
+\index{roll@{roll}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{roll()}{roll()}}
+{\footnotesize\ttfamily void Quat\+Camera\+::roll (\begin{DoxyParamCaption}\item[{const float}]{z }\end{DoxyParamCaption})}
+
+
+
+Roll the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & a const float -\/ The amount to rotate around z axi \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a6dd3d47d703dd58f12a7c9cba7fc3972}\label{classimat2908_1_1_quat_camera_a6dd3d47d703dd58f12a7c9cba7fc3972}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!rotate@{rotate}}
+\index{rotate@{rotate}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void Quat\+Camera\+::rotate (\begin{DoxyParamCaption}\item[{const float}]{yaw,  }\item[{const float}]{pitch }\end{DoxyParamCaption})}
+
+
+
+Rotate the camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em yaw} & a const float -\/ The yaw \\
+\hline
+{\em pitch} & a const float -\/ The pitch \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a1aa94608351c89ff7d78a6b9a76a2e31}\label{classimat2908_1_1_quat_camera_a1aa94608351c89ff7d78a6b9a76a2e31}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!setAspectRatio@{setAspectRatio}}
+\index{setAspectRatio@{setAspectRatio}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{setAspectRatio()}{setAspectRatio()}}
+{\footnotesize\ttfamily void Quat\+Camera\+::set\+Aspect\+Ratio (\begin{DoxyParamCaption}\item[{float}]{aspect\+Ratio }\end{DoxyParamCaption})}
+
+
+
+Set the aspect ratio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aspect\+Ratio} & a float -\/ The aspect ratio \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a8aacfcc63b7ac9a5669b02015fe5fae9}\label{classimat2908_1_1_quat_camera_a8aacfcc63b7ac9a5669b02015fe5fae9}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!setFieldOfView@{setFieldOfView}}
+\index{setFieldOfView@{setFieldOfView}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{setFieldOfView()}{setFieldOfView()}}
+{\footnotesize\ttfamily void Quat\+Camera\+::set\+Field\+Of\+View (\begin{DoxyParamCaption}\item[{float}]{field\+Of\+View }\end{DoxyParamCaption})}
+
+
+
+Set the field of view. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+Of\+View} & a float -\/ The field of view \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a040130458bd3e49c93a5af18843a10e2}\label{classimat2908_1_1_quat_camera_a040130458bd3e49c93a5af18843a10e2}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!setNearAndFarPlanes@{setNearAndFarPlanes}}
+\index{setNearAndFarPlanes@{setNearAndFarPlanes}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{setNearAndFarPlanes()}{setNearAndFarPlanes()}}
+{\footnotesize\ttfamily void Quat\+Camera\+::set\+Near\+And\+Far\+Planes (\begin{DoxyParamCaption}\item[{float}]{near\+Plane,  }\item[{float}]{far\+Plane }\end{DoxyParamCaption})}
+
+
+
+Set the near and far plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em near\+Plane} & a float -\/ The near plane \\
+\hline
+{\em far\+Plane} & a float -\/ The far plane \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_aeac311b066f57a737ed853b958eabbd9}\label{classimat2908_1_1_quat_camera_aeac311b066f57a737ed853b958eabbd9}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Quat\+Camera\+::set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position }\end{DoxyParamCaption})}
+
+
+
+Set the camera position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & a glm\+::vec3\& -\/ The position of the camera \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a9b94f303eebea7a511d337583355a36b}\label{classimat2908_1_1_quat_camera_a9b94f303eebea7a511d337583355a36b}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!updateView@{updateView}}
+\index{updateView@{updateView}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{updateView()}{updateView()}}
+{\footnotesize\ttfamily void Quat\+Camera\+::update\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update the camera\textquotesingle{}s view. 
+
+\mbox{\hyperlink{classimat2908_1_1_quat_camera_a9b94f303eebea7a511d337583355a36b}{update\+View()}} \mbox{\Hypertarget{classimat2908_1_1_quat_camera_a5566f0072ba6f33b2f45080f41c5da8d}\label{classimat2908_1_1_quat_camera_a5566f0072ba6f33b2f45080f41c5da8d}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!view@{view}}
+\index{view@{view}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{view()}{view()}}
+{\footnotesize\ttfamily glm\+::mat4 Quat\+Camera\+::view (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the View matrix. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The view matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classimat2908_1_1_quat_camera_a5eef94223c320f39ae87fa90ef00df5b}\label{classimat2908_1_1_quat_camera_a5eef94223c320f39ae87fa90ef00df5b}} 
+\index{imat2908::QuatCamera@{imat2908::QuatCamera}!zoom@{zoom}}
+\index{zoom@{zoom}!imat2908::QuatCamera@{imat2908::QuatCamera}}
+\doxysubsubsection{\texorpdfstring{zoom()}{zoom()}}
+{\footnotesize\ttfamily void Quat\+Camera\+::zoom (\begin{DoxyParamCaption}\item[{const float}]{z }\end{DoxyParamCaption})}
+
+
+
+Zoom with camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & a const float -\/ The amount to translate in z axis \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\mbox{\hyperlink{_quat_camera_8h}{Quat\+Camera.\+h}}\item 
+C\+:/doc/src/src/\mbox{\hyperlink{_quat_camera_8cpp}{Quat\+Camera.\+cpp}}\end{DoxyCompactItemize}

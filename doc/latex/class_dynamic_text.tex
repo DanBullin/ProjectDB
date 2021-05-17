@@ -1,0 +1,169 @@
+\hypertarget{class_dynamic_text}{}\doxysection{Dynamic\+Text Class Reference}
+\label{class_dynamic_text}\index{DynamicText@{DynamicText}}
+
+
+A \mbox{\hyperlink{class_dynamic_text}{Dynamic\+Text}}.  
+
+
+
+
+{\ttfamily \#include $<$Dynamic\+Text.\+h$>$}
+
+Inheritance diagram for Dynamic\+Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_dynamic_text}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dynamic_text_aa51ee2652b35052ac23d81beccece147}{Dynamic\+Text}} (const std\+::string text, const sf\+::\+Vector2f pos, const unsigned int character\+Size, const unsigned int release\+Action)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dynamic_text_a2643e8944aefdf5b5035812890abde08}{contains}} (sf\+::\+Vector2f pos) override
+\begin{DoxyCompactList}\small\item\em Does this object contain the point passed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dynamic_text_ac0ffc13ab4049fd49a56d69a0cd26dfa}{update}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game) override
+\begin{DoxyCompactList}\small\item\em Update the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dynamic_text_a31905e0e7c0b9683726ca71f6f70d00e}{mouse\+Enter}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game) override
+\begin{DoxyCompactList}\small\item\em Action to run when the mouse enters. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dynamic_text_af6bfcec2308d330069e8c71412b29f2d}{mouse\+Leave}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game) override
+\begin{DoxyCompactList}\small\item\em Action to run when the mouse leaves. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dynamic_text_a449021dffcf4385d35491e6852d795b2}{mouse\+Release}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game) override
+\begin{DoxyCompactList}\small\item\em Action to run when the mouse releases. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_dynamic_text}{Dynamic\+Text}}. 
+
+A \mbox{\hyperlink{class_dynamic_text}{Dynamic\+Text}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_dynamic_text_aa51ee2652b35052ac23d81beccece147}\label{class_dynamic_text_aa51ee2652b35052ac23d81beccece147}} 
+\index{DynamicText@{DynamicText}!DynamicText@{DynamicText}}
+\index{DynamicText@{DynamicText}!DynamicText@{DynamicText}}
+\doxysubsubsection{\texorpdfstring{DynamicText()}{DynamicText()}}
+{\footnotesize\ttfamily Dynamic\+Text\+::\+Dynamic\+Text (\begin{DoxyParamCaption}\item[{const std\+::string}]{text,  }\item[{const sf\+::\+Vector2f}]{pos,  }\item[{const unsigned int}]{character\+Size,  }\item[{const unsigned int}]{release\+Action }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a const std\+::string -\/ The text contents to display \\
+\hline
+{\em pos} & a const sf\+::\+Vector2f -\/ The position of the object \\
+\hline
+{\em character\+Size} & a const unsigned int -\/ The character size of the text \\
+\hline
+{\em release\+Action} & a const unsigned int -\/ The action index (1-\/4) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dynamic_text_a2643e8944aefdf5b5035812890abde08}\label{class_dynamic_text_a2643e8944aefdf5b5035812890abde08}} 
+\index{DynamicText@{DynamicText}!contains@{contains}}
+\index{contains@{contains}!DynamicText@{DynamicText}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Dynamic\+Text\+::contains (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Does this object contain the point passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const sf\+::\+Vector2f -\/ The point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the object contain the point 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_aaf7740bd2bc2f463c46a0c9f69e34b83}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_dynamic_text_a31905e0e7c0b9683726ca71f6f70d00e}\label{class_dynamic_text_a31905e0e7c0b9683726ca71f6f70d00e}} 
+\index{DynamicText@{DynamicText}!mouseEnter@{mouseEnter}}
+\index{mouseEnter@{mouseEnter}!DynamicText@{DynamicText}}
+\doxysubsubsection{\texorpdfstring{mouseEnter()}{mouseEnter()}}
+{\footnotesize\ttfamily void Dynamic\+Text\+::mouse\+Enter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Action to run when the mouse enters. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_object_a5dd52b78d80de9b45287b2bc0299730a}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_dynamic_text_af6bfcec2308d330069e8c71412b29f2d}\label{class_dynamic_text_af6bfcec2308d330069e8c71412b29f2d}} 
+\index{DynamicText@{DynamicText}!mouseLeave@{mouseLeave}}
+\index{mouseLeave@{mouseLeave}!DynamicText@{DynamicText}}
+\doxysubsubsection{\texorpdfstring{mouseLeave()}{mouseLeave()}}
+{\footnotesize\ttfamily void Dynamic\+Text\+::mouse\+Leave (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Action to run when the mouse leaves. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_object_a31acad9095c16c356b3cfbf1d9a95503}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_dynamic_text_a449021dffcf4385d35491e6852d795b2}\label{class_dynamic_text_a449021dffcf4385d35491e6852d795b2}} 
+\index{DynamicText@{DynamicText}!mouseRelease@{mouseRelease}}
+\index{mouseRelease@{mouseRelease}!DynamicText@{DynamicText}}
+\doxysubsubsection{\texorpdfstring{mouseRelease()}{mouseRelease()}}
+{\footnotesize\ttfamily void Dynamic\+Text\+::mouse\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Action to run when the mouse releases. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_game_object_af76373a9e0242f4860b932cc81d4f4fb}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_dynamic_text_ac0ffc13ab4049fd49a56d69a0cd26dfa}\label{class_dynamic_text_ac0ffc13ab4049fd49a56d69a0cd26dfa}} 
+\index{DynamicText@{DynamicText}!update@{update}}
+\index{update@{update}!DynamicText@{DynamicText}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Dynamic\+Text\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a7d45aca280e5d79408cb70b6d8689ff0}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Game\+Objects/\+Objects/\+U\+I/\mbox{\hyperlink{_dynamic_text_8h}{Dynamic\+Text.\+h}}\item 
+C\+:/doc/src/src/\+Game\+Objects/\+Objects/\+U\+I/\mbox{\hyperlink{_dynamic_text_8cpp}{Dynamic\+Text.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,149 @@
+\hypertarget{class_enemy}{}\doxysection{Enemy Class Reference}
+\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+A \mbox{\hyperlink{class_enemy}{Enemy}}.  
+
+
+
+
+{\ttfamily \#include $<$Enemy.\+h$>$}
+
+Inheritance diagram for Enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_enemy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_enemy_a734b197f72a334b117d337590126cf99}{Enemy}} (b2\+World $\ast$world, const float posX, const float posY, const b2\+Vec2 velocity, const float max\+Time)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_enemy_afac9901a9764253fcb73f2a9b7dba28f}{contains}} (const sf\+::\+Vector2f pos) override
+\begin{DoxyCompactList}\small\item\em Does this object contain the point passed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_aeae85d5802c52a20e39e2c4f5000ff3b}{update}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game) override
+\begin{DoxyCompactList}\small\item\em Update the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a05bb6bcf8b2c74dad85c7eae008b4d98}{enter\+Collision}} (const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$collider, const bool fixture\+A\+Sensor, const bool fixture\+B\+Sensor) override
+\begin{DoxyCompactList}\small\item\em Enter collision action when this object collides. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a04197457e42288cd42535c30ff36745a}{animation\+Update}} () override
+\begin{DoxyCompactList}\small\item\em The animation update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_enemy}{Enemy}}. 
+
+A \mbox{\hyperlink{class_enemy}{Enemy}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_enemy_a734b197f72a334b117d337590126cf99}\label{class_enemy_a734b197f72a334b117d337590126cf99}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{const float}]{posX,  }\item[{const float}]{posY,  }\item[{const b2\+Vec2}]{velocity,  }\item[{const float}]{max\+Time }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & a b2\+World$\ast$ -\/ A pointer to the B\+O\+X2D world \\
+\hline
+{\em posX} & a const float -\/ The x position \\
+\hline
+{\em posY} & a const float -\/ The y position \\
+\hline
+{\em velocity} & a const b2\+Vec2 -\/ The movement velocity \\
+\hline
+{\em max\+Time} & a const unsigned int -\/ The max movement time sequence \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_a04197457e42288cd42535c30ff36745a}\label{class_enemy_a04197457e42288cd42535c30ff36745a}} 
+\index{Enemy@{Enemy}!animationUpdate@{animationUpdate}}
+\index{animationUpdate@{animationUpdate}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{animationUpdate()}{animationUpdate()}}
+{\footnotesize\ttfamily void Enemy\+::animation\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+The animation update. 
+
+\mbox{\hyperlink{class_enemy_a04197457e42288cd42535c30ff36745a}{animation\+Update()}} 
+
+Reimplemented from \mbox{\hyperlink{class_game_object_aaf18f570c847ed0133c1f2a8e32b337a}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_enemy_afac9901a9764253fcb73f2a9b7dba28f}\label{class_enemy_afac9901a9764253fcb73f2a9b7dba28f}} 
+\index{Enemy@{Enemy}!contains@{contains}}
+\index{contains@{contains}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Enemy\+::contains (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Does this object contain the point passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const sf\+::\+Vector2f -\/ The point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the object contain the point 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_aaf7740bd2bc2f463c46a0c9f69e34b83}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_enemy_a05bb6bcf8b2c74dad85c7eae008b4d98}\label{class_enemy_a05bb6bcf8b2c74dad85c7eae008b4d98}} 
+\index{Enemy@{Enemy}!enterCollision@{enterCollision}}
+\index{enterCollision@{enterCollision}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{enterCollision()}{enterCollision()}}
+{\footnotesize\ttfamily void Enemy\+::enter\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{collider,  }\item[{const bool}]{fixture\+A\+Sensor,  }\item[{const bool}]{fixture\+B\+Sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Enter collision action when this object collides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & a Physics\+Object$\ast$ -\/ A pointer to the collding object \\
+\hline
+{\em fixture\+A\+Sensor} & a const bool -\/ Is this object a sensor \\
+\hline
+{\em fixture\+B\+Sensor} & a const bool -\/ Is the colliding object a sensor \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_physics_object_a8a445999733ebc0511e39986a1c0c7a6}{Physics\+Object}}.
+
+\mbox{\Hypertarget{class_enemy_aeae85d5802c52a20e39e2c4f5000ff3b}\label{class_enemy_aeae85d5802c52a20e39e2c4f5000ff3b}} 
+\index{Enemy@{Enemy}!update@{update}}
+\index{update@{update}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Enemy\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a7d45aca280e5d79408cb70b6d8689ff0}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Game\+Objects/\+Objects/\+Physics/\mbox{\hyperlink{_enemy_8h}{Enemy.\+h}}\item 
+C\+:/doc/src/src/\+Game\+Objects/\+Objects/\+Physics/\mbox{\hyperlink{_enemy_8cpp}{Enemy.\+cpp}}\end{DoxyCompactItemize}

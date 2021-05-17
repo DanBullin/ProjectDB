@@ -1,0 +1,458 @@
+\hypertarget{class_g_l_s_l_program}{}\doxysection{G\+L\+S\+L\+Program Class Reference}
+\label{class_g_l_s_l_program}\index{GLSLProgram@{GLSLProgram}}
+
+
+A glslprogram.  
+
+
+
+
+{\ttfamily \#include $<$glslprogram.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_g_l_s_l_program_a9a93ab534634ee4abfda2f216008e553}{G\+L\+S\+L\+Program}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_g_l_s_l_program_aec786fecfa03b6aaa3c70f8da3c05a02}\label{class_g_l_s_l_program_aec786fecfa03b6aaa3c70f8da3c05a02}} 
+\mbox{\hyperlink{class_g_l_s_l_program_aec786fecfa03b6aaa3c70f8da3c05a02}{$\sim$\+G\+L\+S\+L\+Program}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a7ac90d2adc456b0bd71fae53ab76812c}{compile\+Shader}} (const char $\ast$file\+Name)  throw (\+G\+L\+S\+L\+Program\+Exception)
+\begin{DoxyCompactList}\small\item\em Compile shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_af69e0c7d69ad386b150e5bb9ae66bf26}{compile\+Shader}} (const char $\ast$file\+Name, G\+L\+S\+L\+Shader\+::\+G\+L\+S\+L\+Shader\+Type type)  throw (\+G\+L\+S\+L\+Program\+Exception)
+\begin{DoxyCompactList}\small\item\em Compile shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a969db118997cd970fb8496c849c8d72b}{compile\+Shader}} (const string \&source, G\+L\+S\+L\+Shader\+::\+G\+L\+S\+L\+Shader\+Type type, const char $\ast$file\+Name=N\+U\+LL)  throw (\+G\+L\+S\+L\+Program\+Exception)
+\begin{DoxyCompactList}\small\item\em Compile shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_adba8352af3d733cd6644f07e8512c38f}{link}} ()  throw (\+G\+L\+S\+L\+Program\+Exception)
+\begin{DoxyCompactList}\small\item\em Link shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_af15950a7ce467792fcc17430d03c5e31}{validate}} ()  throw (\+G\+L\+S\+L\+Program\+Exception)
+\begin{DoxyCompactList}\small\item\em Validate shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a0ea2aeacb4361b37f145246430134bb6}{use}} ()  throw (\+G\+L\+S\+L\+Program\+Exception)
+\begin{DoxyCompactList}\small\item\em Use shader. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_g_l_s_l_program_aa630d9d45c1fc992aac91a7d1eb92e08}{get\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Gets shader handle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_g_l_s_l_program_ad0d1efa38db415e35d9a329a93828815}{is\+Linked}} ()
+\begin{DoxyCompactList}\small\item\em Gets whether shader is linked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a54589ae245f6fac51f79a6617c91240b}{bind\+Attrib\+Location}} (G\+Luint location, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Bind attribute location. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a44270f942de121ef2493e26f1226a902}{bind\+Frag\+Data\+Location}} (G\+Luint location, const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Bind frag data location. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a85e4c896c2a8524cb4574a064a2dfb0c}{set\+Uniform}} (const char $\ast$name, float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Sets uniform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_ac12854f75975b0aa5dc6b3699829b582}{set\+Uniform}} (const char $\ast$name, const vec2 \&v)
+\begin{DoxyCompactList}\small\item\em Sets uniform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a8784d794a6dbe97903d85bd0135a61c8}{set\+Uniform}} (const char $\ast$name, const vec3 \&v)
+\begin{DoxyCompactList}\small\item\em Sets uniform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_aadf3691c119baac516735b0d01b85f7e}{set\+Uniform}} (const char $\ast$name, const vec4 \&v)
+\begin{DoxyCompactList}\small\item\em Sets uniform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a44a7ace14e6c82311526e47264957fa9}{set\+Uniform}} (const char $\ast$name, const mat4 \&m)
+\begin{DoxyCompactList}\small\item\em Sets uniform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a69bd967b17f6b06e9fd4772b25e86396}{set\+Uniform}} (const char $\ast$name, const mat3 \&m)
+\begin{DoxyCompactList}\small\item\em Sets uniform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_aae087de52f91a47ac23c9f6ebf369bc3}{set\+Uniform}} (const char $\ast$name, float val)
+\begin{DoxyCompactList}\small\item\em Sets uniform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a437782e359f10918044f1bbad0a98148}{set\+Uniform}} (const char $\ast$name, int val)
+\begin{DoxyCompactList}\small\item\em Sets uniform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_acfab16fafb4617f0625f170b39716eb8}{set\+Uniform}} (const char $\ast$name, bool val)
+\begin{DoxyCompactList}\small\item\em Sets uniform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a759987af814d389c9081874ac788717f}{set\+Uniform}} (const char $\ast$name, G\+Luint val)
+\begin{DoxyCompactList}\small\item\em Sets uniform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_a75e11d36a5b634c58a84caa96c9c38e4}{print\+Active\+Uniforms}} ()
+\begin{DoxyCompactList}\small\item\em Prints active uniforms. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_ae0beab0aabdbef57e69ddbc724a8d1f9}{print\+Active\+Uniform\+Blocks}} ()
+\begin{DoxyCompactList}\small\item\em Prints active uniform blocks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_g_l_s_l_program_aab7c8bc0e5d0b75a9eb0c60de3cda5b5}{print\+Active\+Attribs}} ()
+\begin{DoxyCompactList}\small\item\em Prints active attributes. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{class_g_l_s_l_program_a3cd8daf0887279e88164c6e60a759d67}{get\+Type\+String}} (G\+Lenum type)
+\begin{DoxyCompactList}\small\item\em Get type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A glslprogram. 
+
+By\+: Dan Bullin (P14132258)~\newline
+Creates, compiles and runs shader programs 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_g_l_s_l_program_a9a93ab534634ee4abfda2f216008e553}\label{class_g_l_s_l_program_a9a93ab534634ee4abfda2f216008e553}} 
+\index{GLSLProgram@{GLSLProgram}!GLSLProgram@{GLSLProgram}}
+\index{GLSLProgram@{GLSLProgram}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{GLSLProgram()}{GLSLProgram()}}
+{\footnotesize\ttfamily G\+L\+S\+L\+Program\+::\+G\+L\+S\+L\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+$<$ Constructor
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_g_l_s_l_program_a54589ae245f6fac51f79a6617c91240b}\label{class_g_l_s_l_program_a54589ae245f6fac51f79a6617c91240b}} 
+\index{GLSLProgram@{GLSLProgram}!bindAttribLocation@{bindAttribLocation}}
+\index{bindAttribLocation@{bindAttribLocation}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{bindAttribLocation()}{bindAttribLocation()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::bind\+Attrib\+Location (\begin{DoxyParamCaption}\item[{G\+Luint}]{location,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Bind attribute location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & a G\+Luint -\/ The location of the attribute \\
+\hline
+{\em name} & a const char$\ast$ -\/ The name of the attribute \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_a44270f942de121ef2493e26f1226a902}\label{class_g_l_s_l_program_a44270f942de121ef2493e26f1226a902}} 
+\index{GLSLProgram@{GLSLProgram}!bindFragDataLocation@{bindFragDataLocation}}
+\index{bindFragDataLocation@{bindFragDataLocation}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{bindFragDataLocation()}{bindFragDataLocation()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::bind\+Frag\+Data\+Location (\begin{DoxyParamCaption}\item[{G\+Luint}]{location,  }\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Bind frag data location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & a G\+Luint -\/ The location of the frag data \\
+\hline
+{\em name} & a const char$\ast$ -\/ The name of the frag data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_a7ac90d2adc456b0bd71fae53ab76812c}\label{class_g_l_s_l_program_a7ac90d2adc456b0bd71fae53ab76812c}} 
+\index{GLSLProgram@{GLSLProgram}!compileShader@{compileShader}}
+\index{compileShader@{compileShader}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{compileShader()}{compileShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::compile\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption}) throw ( \mbox{\hyperlink{class_g_l_s_l_program_exception}{G\+L\+S\+L\+Program\+Exception}}) }
+
+
+
+Compile shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & a const char$\ast$ -\/ The file of the shader to be compiled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_af69e0c7d69ad386b150e5bb9ae66bf26}\label{class_g_l_s_l_program_af69e0c7d69ad386b150e5bb9ae66bf26}} 
+\index{GLSLProgram@{GLSLProgram}!compileShader@{compileShader}}
+\index{compileShader@{compileShader}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{compileShader()}{compileShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::compile\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{G\+L\+S\+L\+Shader\+::\+G\+L\+S\+L\+Shader\+Type}]{type }\end{DoxyParamCaption}) throw ( \mbox{\hyperlink{class_g_l_s_l_program_exception}{G\+L\+S\+L\+Program\+Exception}}) }
+
+
+
+Compile shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & a const char$\ast$ -\/ The file of the shader to be compiled \\
+\hline
+{\em type} & a G\+L\+S\+L\+Shader\+Type -\/ The type of shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_a969db118997cd970fb8496c849c8d72b}\label{class_g_l_s_l_program_a969db118997cd970fb8496c849c8d72b}} 
+\index{GLSLProgram@{GLSLProgram}!compileShader@{compileShader}}
+\index{compileShader@{compileShader}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{compileShader()}{compileShader()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::compile\+Shader (\begin{DoxyParamCaption}\item[{const string \&}]{source,  }\item[{G\+L\+S\+L\+Shader\+::\+G\+L\+S\+L\+Shader\+Type}]{type,  }\item[{const char $\ast$}]{file\+Name = {\ttfamily NULL} }\end{DoxyParamCaption}) throw ( \mbox{\hyperlink{class_g_l_s_l_program_exception}{G\+L\+S\+L\+Program\+Exception}}) }
+
+
+
+Compile shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & a const string -\/ The source code \\
+\hline
+{\em type} & a G\+L\+S\+L\+Shader\+Type -\/ The type of shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_aa630d9d45c1fc992aac91a7d1eb92e08}\label{class_g_l_s_l_program_aa630d9d45c1fc992aac91a7d1eb92e08}} 
+\index{GLSLProgram@{GLSLProgram}!getHandle@{getHandle}}
+\index{getHandle@{getHandle}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{getHandle()}{getHandle()}}
+{\footnotesize\ttfamily int G\+L\+S\+L\+Program\+::get\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets shader handle. 
+
+\begin{DoxyReturn}{Returns}
+an int -\/ The handle of the shader program 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_g_l_s_l_program_a3cd8daf0887279e88164c6e60a759d67}\label{class_g_l_s_l_program_a3cd8daf0887279e88164c6e60a759d67}} 
+\index{GLSLProgram@{GLSLProgram}!getTypeString@{getTypeString}}
+\index{getTypeString@{getTypeString}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{getTypeString()}{getTypeString()}}
+{\footnotesize\ttfamily const char $\ast$ G\+L\+S\+L\+Program\+::get\+Type\+String (\begin{DoxyParamCaption}\item[{G\+Lenum}]{type }\end{DoxyParamCaption})}
+
+
+
+Get type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a G\+Lenum -\/ The type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const char$\ast$ -\/ The type as a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_g_l_s_l_program_ad0d1efa38db415e35d9a329a93828815}\label{class_g_l_s_l_program_ad0d1efa38db415e35d9a329a93828815}} 
+\index{GLSLProgram@{GLSLProgram}!isLinked@{isLinked}}
+\index{isLinked@{isLinked}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{isLinked()}{isLinked()}}
+{\footnotesize\ttfamily bool G\+L\+S\+L\+Program\+::is\+Linked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets whether shader is linked. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Whether the shader is linked 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_g_l_s_l_program_adba8352af3d733cd6644f07e8512c38f}\label{class_g_l_s_l_program_adba8352af3d733cd6644f07e8512c38f}} 
+\index{GLSLProgram@{GLSLProgram}!link@{link}}
+\index{link@{link}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{link()}{link()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throw ( \mbox{\hyperlink{class_g_l_s_l_program_exception}{G\+L\+S\+L\+Program\+Exception}}) }
+
+
+
+Link shader. 
+
+\mbox{\hyperlink{class_g_l_s_l_program_adba8352af3d733cd6644f07e8512c38f}{link()}} \mbox{\Hypertarget{class_g_l_s_l_program_aab7c8bc0e5d0b75a9eb0c60de3cda5b5}\label{class_g_l_s_l_program_aab7c8bc0e5d0b75a9eb0c60de3cda5b5}} 
+\index{GLSLProgram@{GLSLProgram}!printActiveAttribs@{printActiveAttribs}}
+\index{printActiveAttribs@{printActiveAttribs}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{printActiveAttribs()}{printActiveAttribs()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::print\+Active\+Attribs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints active attributes. 
+
+\mbox{\hyperlink{class_g_l_s_l_program_aab7c8bc0e5d0b75a9eb0c60de3cda5b5}{print\+Active\+Attribs()}} \mbox{\Hypertarget{class_g_l_s_l_program_ae0beab0aabdbef57e69ddbc724a8d1f9}\label{class_g_l_s_l_program_ae0beab0aabdbef57e69ddbc724a8d1f9}} 
+\index{GLSLProgram@{GLSLProgram}!printActiveUniformBlocks@{printActiveUniformBlocks}}
+\index{printActiveUniformBlocks@{printActiveUniformBlocks}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{printActiveUniformBlocks()}{printActiveUniformBlocks()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::print\+Active\+Uniform\+Blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints active uniform blocks. 
+
+\mbox{\hyperlink{class_g_l_s_l_program_ae0beab0aabdbef57e69ddbc724a8d1f9}{print\+Active\+Uniform\+Blocks()}} \mbox{\Hypertarget{class_g_l_s_l_program_a75e11d36a5b634c58a84caa96c9c38e4}\label{class_g_l_s_l_program_a75e11d36a5b634c58a84caa96c9c38e4}} 
+\index{GLSLProgram@{GLSLProgram}!printActiveUniforms@{printActiveUniforms}}
+\index{printActiveUniforms@{printActiveUniforms}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{printActiveUniforms()}{printActiveUniforms()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::print\+Active\+Uniforms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints active uniforms. 
+
+\mbox{\hyperlink{class_g_l_s_l_program_a75e11d36a5b634c58a84caa96c9c38e4}{print\+Active\+Uniforms()}} \mbox{\Hypertarget{class_g_l_s_l_program_acfab16fafb4617f0625f170b39716eb8}\label{class_g_l_s_l_program_acfab16fafb4617f0625f170b39716eb8}} 
+\index{GLSLProgram@{GLSLProgram}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/10]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{bool}]{val }\end{DoxyParamCaption})}
+
+
+
+Sets uniform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the uniform \\
+\hline
+{\em val} & a bool -\/ data value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_a69bd967b17f6b06e9fd4772b25e86396}\label{class_g_l_s_l_program_a69bd967b17f6b06e9fd4772b25e86396}} 
+\index{GLSLProgram@{GLSLProgram}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/10]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const mat3 \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Sets uniform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the uniform \\
+\hline
+{\em m} & a const mat3 -\/ data value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_a44a7ace14e6c82311526e47264957fa9}\label{class_g_l_s_l_program_a44a7ace14e6c82311526e47264957fa9}} 
+\index{GLSLProgram@{GLSLProgram}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/10]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const mat4 \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Sets uniform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the uniform \\
+\hline
+{\em m} & a const mat4 -\/ data value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_ac12854f75975b0aa5dc6b3699829b582}\label{class_g_l_s_l_program_ac12854f75975b0aa5dc6b3699829b582}} 
+\index{GLSLProgram@{GLSLProgram}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/10]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const vec2 \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Sets uniform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the uniform \\
+\hline
+{\em v} & a const vec2 -\/ data value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_a8784d794a6dbe97903d85bd0135a61c8}\label{class_g_l_s_l_program_a8784d794a6dbe97903d85bd0135a61c8}} 
+\index{GLSLProgram@{GLSLProgram}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [5/10]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const vec3 \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Sets uniform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the uniform \\
+\hline
+{\em v} & a const vec3 -\/ data value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_aadf3691c119baac516735b0d01b85f7e}\label{class_g_l_s_l_program_aadf3691c119baac516735b0d01b85f7e}} 
+\index{GLSLProgram@{GLSLProgram}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [6/10]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const vec4 \&}]{v }\end{DoxyParamCaption})}
+
+
+
+Sets uniform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the uniform \\
+\hline
+{\em v} & a const vec4 -\/ data value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_aae087de52f91a47ac23c9f6ebf369bc3}\label{class_g_l_s_l_program_aae087de52f91a47ac23c9f6ebf369bc3}} 
+\index{GLSLProgram@{GLSLProgram}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [7/10]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{float}]{val }\end{DoxyParamCaption})}
+
+
+
+Sets uniform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the uniform \\
+\hline
+{\em val} & a float -\/ data value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_a85e4c896c2a8524cb4574a064a2dfb0c}\label{class_g_l_s_l_program_a85e4c896c2a8524cb4574a064a2dfb0c}} 
+\index{GLSLProgram@{GLSLProgram}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [8/10]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+
+
+Sets uniform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the uniform \\
+\hline
+{\em x} & a float -\/ data value \\
+\hline
+{\em y} & a float -\/ data value \\
+\hline
+{\em z} & a float -\/ data value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_a759987af814d389c9081874ac788717f}\label{class_g_l_s_l_program_a759987af814d389c9081874ac788717f}} 
+\index{GLSLProgram@{GLSLProgram}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [9/10]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{G\+Luint}]{val }\end{DoxyParamCaption})}
+
+
+
+Sets uniform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the uniform \\
+\hline
+{\em val} & an G\+Luint -\/ data value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_a437782e359f10918044f1bbad0a98148}\label{class_g_l_s_l_program_a437782e359f10918044f1bbad0a98148}} 
+\index{GLSLProgram@{GLSLProgram}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [10/10]}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Sets uniform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the uniform \\
+\hline
+{\em val} & an int -\/ data value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_g_l_s_l_program_a0ea2aeacb4361b37f145246430134bb6}\label{class_g_l_s_l_program_a0ea2aeacb4361b37f145246430134bb6}} 
+\index{GLSLProgram@{GLSLProgram}!use@{use}}
+\index{use@{use}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throw ( \mbox{\hyperlink{class_g_l_s_l_program_exception}{G\+L\+S\+L\+Program\+Exception}}) }
+
+
+
+Use shader. 
+
+\mbox{\hyperlink{class_g_l_s_l_program_a0ea2aeacb4361b37f145246430134bb6}{use()}} \mbox{\Hypertarget{class_g_l_s_l_program_af15950a7ce467792fcc17430d03c5e31}\label{class_g_l_s_l_program_af15950a7ce467792fcc17430d03c5e31}} 
+\index{GLSLProgram@{GLSLProgram}!validate@{validate}}
+\index{validate@{validate}!GLSLProgram@{GLSLProgram}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily void G\+L\+S\+L\+Program\+::validate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throw ( \mbox{\hyperlink{class_g_l_s_l_program_exception}{G\+L\+S\+L\+Program\+Exception}}) }
+
+
+
+Validate shader. 
+
+\mbox{\hyperlink{class_g_l_s_l_program_af15950a7ce467792fcc17430d03c5e31}{validate()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\mbox{\hyperlink{glslprogram_8h}{glslprogram.\+h}}\item 
+C\+:/doc/src/src/\mbox{\hyperlink{glslprogram_8cpp}{glslprogram.\+cpp}}\end{DoxyCompactItemize}

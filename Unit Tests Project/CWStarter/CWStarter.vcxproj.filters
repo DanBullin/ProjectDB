@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GameObjects">
+      <UniqueIdentifier>{FC4F750E-68B1-521C-F11E-99CE5D7F89DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GameObjects\Objects">
+      <UniqueIdentifier>{B52A73D2-2138-A1B8-AA1E-9DA3162B6D6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GameObjects\Objects\UI">
+      <UniqueIdentifier>{C2FDFEB8-AE23-C91F-9769-4EEB832EEEEB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Managers">
+      <UniqueIdentifier>{86FBF602-72F4-1555-9B26-FBD9877EF560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Physics">
+      <UniqueIdentifier>{FB2BBE45-67B7-2B0A-70C8-AEFEDCD2870A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Scene">
+      <UniqueIdentifier>{66DFE0A3-D29F-5CDA-9BDA-A557075AA1B6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Scene\SceneLayers">
+      <UniqueIdentifier>{93A65B37-FF68-8FC1-4819-1E4EB41A689F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObjects">
+      <UniqueIdentifier>{A0E17904-0C6D-E7C8-157E-6ABD818843C9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObjects\Objects">
+      <UniqueIdentifier>{592031A8-C557-793F-CE61-DD623A18A038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObjects\Objects\UI">
+      <UniqueIdentifier>{E6C04E98-D2D0-FA68-3B8A-5F8727B9E901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Managers">
+      <UniqueIdentifier>{AA4F78EE-96B2-0793-3F38-40492B7AD315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Physics">
+      <UniqueIdentifier>{9F8B9316-0B41-0C0C-9435-06E300EA0210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{0A06D2B3-7670-862A-BFAE-37D02B58647F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\test.png" />
+    <Image Include="assets\Textures\background.png" />
+    <Image Include="assets\Textures\button.png" />
+    <Image Include="assets\Textures\button2.png" />
+    <Image Include="assets\Textures\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\loadTextures.txt" />
+    <Text Include="assets\loadFonts.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\Fonts\arial.ttf" />
+    <Font Include="assets\Fonts\arialbd.ttf" />
+    <Font Include="assets\Fonts\arialbi.ttf" />
+    <Font Include="assets\Fonts\ariali.ttf" />
+    <Font Include="assets\Fonts\ARIALN.TTF" />
+    <Font Include="assets\Fonts\ARIALNB.TTF" />
+    <Font Include="assets\Fonts\ARIALNBI.TTF" />
+    <Font Include="assets\Fonts\ARIALNI.TTF" />
+    <Font Include="assets\Fonts\ariblk.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Events\EventListener.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\Player.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\StaticBlock.h" />
+    <ClInclude Include="include\GameObjects\Objects\StaticImage.h" />
+    <ClInclude Include="include\GameObjects\GameObject.h" />
+    <ClInclude Include="include\Managers\ResourceManager.h" />
+    <ClInclude Include="include\Physics\SFMLDebugDraw.h" />
+    <ClInclude Include="include\Scene\Scenes\Level.h" />
+    <ClInclude Include="include\Scene\Scenes\MainMenu.h" />
+    <ClInclude Include="include\Scene\Scene.h" />
+    <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\Window.h" />
+    <ClInclude Include="include\GameObjects\PhysicsObject.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\MovingPlatform.h" />
+    <ClInclude Include="include\Maths\VectorDistance.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\Gem.h" />
+    <ClInclude Include="include\Physics\ContactListener.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\GravitySwitch.h" />
+    <ClInclude Include="include\Scene\Scenes\Pause.h" />
+    <ClInclude Include="include\GameObjects\Objects\UI\StaticText.h" />
+    <ClInclude Include="include\Scene\Scenes\GameOver.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\Lava.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\Box.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\Key.h" />
+    <ClInclude Include="include\GameObjects\Objects\UI\KeyIcon.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\Door.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\RevolvingPlatform.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\Enemy.h" />
+    <ClInclude Include="include\GameObjects\Objects\UI\DynamicText.h" />
+    <ClInclude Include="include\GameObjects\PhysicsMaker.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\IronDoor.h" />
+    <ClInclude Include="include\GameObjects\Objects\Physics\DoorSensor.h" />
+    <ClInclude Include="Tests\Game\GameTests.h" />
+    <ClInclude Include="Tests\Level\LevelTests.h" />
+    <ClInclude Include="Tests\Level\CollisionTests.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Events\EventListener.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\Player.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\StaticBlock.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\StaticImage.cpp" />
+    <ClCompile Include="src\GameObjects\GameObject.cpp" />
+    <ClCompile Include="src\Managers\ResourceManager.cpp" />
+    <ClCompile Include="src\Physics\SFMLDebugDraw.cpp" />
+    <ClCompile Include="src\Scene\Scenes\Level.cpp" />
+    <ClCompile Include="src\Scene\Scenes\MainMenu.cpp" />
+    <ClCompile Include="src\Scene\Scene.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Window.cpp" />
+    <ClCompile Include="src\GameObjects\PhysicsObject.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\MovingPlatform.cpp" />
+    <ClCompile Include="src\Maths\VectorDistance.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\Gem.cpp" />
+    <ClCompile Include="src\Physics\ContactListener.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\GravitySwitch.cpp" />
+    <ClCompile Include="src\Scene\Scenes\Pause.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\UI\StaticText.cpp" />
+    <ClCompile Include="src\Scene\Scenes\GameOver.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\Lava.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\Box.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\Key.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\UI\KeyIcon.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\Door.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\RevolvingPlatform.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\Enemy.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\UI\DynamicText.cpp" />
+    <ClCompile Include="src\GameObjects\PhysicsMaker.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\IronDoor.cpp" />
+    <ClCompile Include="src\GameObjects\Objects\Physics\DoorSensor.cpp" />
+  </ItemGroup>
+</Project>

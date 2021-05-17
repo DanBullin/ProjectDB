@@ -1,0 +1,100 @@
+\hypertarget{class_v_b_o_plane}{}\doxysection{V\+B\+O\+Plane Class Reference}
+\label{class_v_b_o_plane}\index{VBOPlane@{VBOPlane}}
+Inheritance diagram for V\+B\+O\+Plane\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_v_b_o_plane}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_v_b_o_plane_a74b067c6ad28fcec5acfe333aaca3324}{V\+B\+O\+Plane}} (float, float, int, int)
+\begin{DoxyCompactList}\small\item\em Constructor requiring plane size and divisions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_v_b_o_plane_acd0bd15f1cc54e6662a1daabed4b1748}{render}} () const
+\begin{DoxyCompactList}\small\item\em Render the plane. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_v_b_o_plane_a3192732693e3b5f5e278cf4fd7b87ed9}{set\+Material}} (vec3 ambient, vec3 diffuse, vec3 specular, float shiny)
+\begin{DoxyCompactList}\small\item\em Set the object\textquotesingle{}s material. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structmaterial}{material}} \mbox{\hyperlink{class_v_b_o_plane_a862525c2f1bcbfc95ff9474ab3de709b}{get\+Material}} ()
+\begin{DoxyCompactList}\small\item\em Get the object\textquotesingle{}s material. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_v_b_o_plane_a74b067c6ad28fcec5acfe333aaca3324}\label{class_v_b_o_plane_a74b067c6ad28fcec5acfe333aaca3324}} 
+\index{VBOPlane@{VBOPlane}!VBOPlane@{VBOPlane}}
+\index{VBOPlane@{VBOPlane}!VBOPlane@{VBOPlane}}
+\doxysubsubsection{\texorpdfstring{VBOPlane()}{VBOPlane()}}
+{\footnotesize\ttfamily V\+B\+O\+Plane\+::\+V\+B\+O\+Plane (\begin{DoxyParamCaption}\item[{float}]{xsize,  }\item[{float}]{zsize,  }\item[{int}]{xdivs,  }\item[{int}]{zdivs }\end{DoxyParamCaption})}
+
+
+
+Constructor requiring plane size and divisions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xsize} & a float -\/ The size in x dimension \\
+\hline
+{\em zsize} & a float -\/ The size in z dimension \\
+\hline
+{\em xdivs} & an int -\/ The number of divisions in x axis \\
+\hline
+{\em zdivs} & an int -\/ The number of divisions in z axis \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_v_b_o_plane_a862525c2f1bcbfc95ff9474ab3de709b}\label{class_v_b_o_plane_a862525c2f1bcbfc95ff9474ab3de709b}} 
+\index{VBOPlane@{VBOPlane}!getMaterial@{getMaterial}}
+\index{getMaterial@{getMaterial}!VBOPlane@{VBOPlane}}
+\doxysubsubsection{\texorpdfstring{getMaterial()}{getMaterial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmaterial}{material}} V\+B\+O\+Plane\+::get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the object\textquotesingle{}s material. 
+
+\begin{DoxyReturn}{Returns}
+a material -\/ The object\textquotesingle{}s material 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_b_o_plane_acd0bd15f1cc54e6662a1daabed4b1748}\label{class_v_b_o_plane_acd0bd15f1cc54e6662a1daabed4b1748}} 
+\index{VBOPlane@{VBOPlane}!render@{render}}
+\index{render@{render}!VBOPlane@{VBOPlane}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void V\+B\+O\+Plane\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Render the plane. 
+
+\mbox{\hyperlink{class_v_b_o_plane_acd0bd15f1cc54e6662a1daabed4b1748}{render()}} 
+
+Implements \mbox{\hyperlink{class_drawable_a773dfc1e1dc02e4156204af3939d04d1}{Drawable}}.
+
+\mbox{\Hypertarget{class_v_b_o_plane_a3192732693e3b5f5e278cf4fd7b87ed9}\label{class_v_b_o_plane_a3192732693e3b5f5e278cf4fd7b87ed9}} 
+\index{VBOPlane@{VBOPlane}!setMaterial@{setMaterial}}
+\index{setMaterial@{setMaterial}!VBOPlane@{VBOPlane}}
+\doxysubsubsection{\texorpdfstring{setMaterial()}{setMaterial()}}
+{\footnotesize\ttfamily void V\+B\+O\+Plane\+::set\+Material (\begin{DoxyParamCaption}\item[{vec3}]{ambient,  }\item[{vec3}]{diffuse,  }\item[{vec3}]{specular,  }\item[{float}]{shiny }\end{DoxyParamCaption})}
+
+
+
+Set the object\textquotesingle{}s material. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ambient} & a vec3 -\/ The ambient light reflectivity \\
+\hline
+{\em diffuse} & a vec3 -\/ The diffuse light reflectivity \\
+\hline
+{\em specular} & a vec3 -\/ The specular light reflectivity \\
+\hline
+{\em shiny} & a float -\/ The specular reflection \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\mbox{\hyperlink{vboplane_8h}{vboplane.\+h}}\item 
+C\+:/doc/src/src/\mbox{\hyperlink{vboplane_8cpp}{vboplane.\+cpp}}\end{DoxyCompactItemize}

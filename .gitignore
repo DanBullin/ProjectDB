@@ -1,0 +1,9 @@
+# Directories
+.vs/
+bin/
+build/
+ProjectDB - Unit Tests/bin/
+ProjectDB - Unit Tests/build/
+ProjectDB - Unit Tests/.vs/
+
+# Files

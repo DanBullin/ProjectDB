@@ -1,0 +1,169 @@
+\hypertarget{class_event_listener}{}\doxysection{Event\+Listener Class Reference}
+\label{class_event_listener}\index{EventListener@{EventListener}}
+
+
+An \mbox{\hyperlink{class_event_listener}{Event\+Listener}}.  
+
+
+
+
+{\ttfamily \#include $<$Event\+Listener.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_event_listener_a7cc493c3e3df36d14e33504d8a92c898}{$\sim$\+Event\+Listener}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_event_listener_adda8b9a7a15e89a0a20f3048138a48b1}\label{class_event_listener_adda8b9a7a15e89a0a20f3048138a48b1}} 
+{\bfseries Event\+Listener} (const \mbox{\hyperlink{class_event_listener}{Event\+Listener}} \&)=delete
+\item 
+void \mbox{\hyperlink{class_event_listener_aa633d020b3e28bd51c10e354f64ed61d}{attach}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Subscribe the gameobject passed to the event listener. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_listener_abbc10569803b65ce570a6f4d9826fb22}{detach}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Unsubscribe the gameobject passed to the event listener. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_listener_aea1901e88770bbea726186a8641de199}{notify}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game, const int event\+Type, const sf\+::\+Vector2f mouse\+Pos)
+\begin{DoxyCompactList}\small\item\em Notify all subscribing objects of the mouse event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_listener_ae99ca64d8fd9e5835a0e058ec0b08249}{notify}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game, const int event\+Type, const int key)
+\begin{DoxyCompactList}\small\item\em Notify all subscribing objects of the key event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_listener_ab2c140bedb2d0f7749df6e2da236e768}{update}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Update all subscribing objects for repeated events. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_event_listener_ac8b66e8ce582a9350949976d60a0b0fe}{clear\+Subscriptions}} ()
+\begin{DoxyCompactList}\small\item\em Remove all subscribing objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_event_listener}{Event\+Listener}} $\ast$ \mbox{\hyperlink{class_event_listener_acd4f7b471d8f0d7a15c124ced8624e5d}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the single event listener. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+An \mbox{\hyperlink{class_event_listener}{Event\+Listener}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_event_listener_a7cc493c3e3df36d14e33504d8a92c898}\label{class_event_listener_a7cc493c3e3df36d14e33504d8a92c898}} 
+\index{EventListener@{EventListener}!````~EventListener@{$\sim$EventListener}}
+\index{````~EventListener@{$\sim$EventListener}!EventListener@{EventListener}}
+\doxysubsubsection{\texorpdfstring{$\sim$EventListener()}{~EventListener()}}
+{\footnotesize\ttfamily Event\+Listener\+::$\sim$\+Event\+Listener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destructor() 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_event_listener_aa633d020b3e28bd51c10e354f64ed61d}\label{class_event_listener_aa633d020b3e28bd51c10e354f64ed61d}} 
+\index{EventListener@{EventListener}!attach@{attach}}
+\index{attach@{attach}!EventListener@{EventListener}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily void Event\+Listener\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Subscribe the gameobject passed to the event listener. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a Game\+Object$\ast$ -\/ A pointer to the object to subscribe \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_event_listener_ac8b66e8ce582a9350949976d60a0b0fe}\label{class_event_listener_ac8b66e8ce582a9350949976d60a0b0fe}} 
+\index{EventListener@{EventListener}!clearSubscriptions@{clearSubscriptions}}
+\index{clearSubscriptions@{clearSubscriptions}!EventListener@{EventListener}}
+\doxysubsubsection{\texorpdfstring{clearSubscriptions()}{clearSubscriptions()}}
+{\footnotesize\ttfamily void Event\+Listener\+::clear\+Subscriptions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Remove all subscribing objects. 
+
+\mbox{\hyperlink{class_event_listener_ac8b66e8ce582a9350949976d60a0b0fe}{clear\+Subscriptions()}} \mbox{\Hypertarget{class_event_listener_abbc10569803b65ce570a6f4d9826fb22}\label{class_event_listener_abbc10569803b65ce570a6f4d9826fb22}} 
+\index{EventListener@{EventListener}!detach@{detach}}
+\index{detach@{detach}!EventListener@{EventListener}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily void Event\+Listener\+::detach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Unsubscribe the gameobject passed to the event listener. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & a Game\+Object$\ast$ -\/ A pointer to the object to unsubscribe \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_event_listener_acd4f7b471d8f0d7a15c124ced8624e5d}\label{class_event_listener_acd4f7b471d8f0d7a15c124ced8624e5d}} 
+\index{EventListener@{EventListener}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!EventListener@{EventListener}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_event_listener}{Event\+Listener}} $\ast$ Event\+Listener\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a pointer to the single event listener. 
+
+\begin{DoxyReturn}{Returns}
+a Event\+Listener$\ast$ -\/ A pointer to the event listener instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_event_listener_ae99ca64d8fd9e5835a0e058ec0b08249}\label{class_event_listener_ae99ca64d8fd9e5835a0e058ec0b08249}} 
+\index{EventListener@{EventListener}!notify@{notify}}
+\index{notify@{notify}!EventListener@{EventListener}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Event\+Listener\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game,  }\item[{const int}]{event\+Type,  }\item[{const int}]{key }\end{DoxyParamCaption})}
+
+
+
+Notify all subscribing objects of the key event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+{\em event\+Type} & a const int -\/ The event type \\
+\hline
+{\em key} & a const int -\/ The key pressed/released \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_event_listener_aea1901e88770bbea726186a8641de199}\label{class_event_listener_aea1901e88770bbea726186a8641de199}} 
+\index{EventListener@{EventListener}!notify@{notify}}
+\index{notify@{notify}!EventListener@{EventListener}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Event\+Listener\+::notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game,  }\item[{const int}]{event\+Type,  }\item[{const sf\+::\+Vector2f}]{mouse\+Pos }\end{DoxyParamCaption})}
+
+
+
+Notify all subscribing objects of the mouse event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+{\em event\+Type} & a const int -\/ The event type \\
+\hline
+{\em mouse\+Pos} & a const sf\+::\+Vector2f -\/ The mouse position converted to view coords \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_event_listener_ab2c140bedb2d0f7749df6e2da236e768}\label{class_event_listener_ab2c140bedb2d0f7749df6e2da236e768}} 
+\index{EventListener@{EventListener}!update@{update}}
+\index{update@{update}!EventListener@{EventListener}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Event\+Listener\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Update all subscribing objects for repeated events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Events/\mbox{\hyperlink{_event_listener_8h}{Event\+Listener.\+h}}\item 
+C\+:/doc/src/src/\+Events/\mbox{\hyperlink{_event_listener_8cpp}{Event\+Listener.\+cpp}}\end{DoxyCompactItemize}

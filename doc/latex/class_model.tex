@@ -1,0 +1,312 @@
+\hypertarget{class_model}{}\doxysection{Model Class Reference}
+\label{class_model}\index{Model@{Model}}
+
+
+A \mbox{\hyperlink{class_model}{Model}}.  
+
+
+
+
+{\ttfamily \#include $<$Model.\+h$>$}
+
+Inheritance diagram for Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}\label{class_model_ad6ebd2062a0b823db841a0b88baac4c0}} 
+\mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a105aeca6a0c7389edf931eff6a91b1ab}{bind}} ()
+\begin{DoxyCompactList}\small\item\em Binds the V\+AO held in this object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a2e0d7c12f6049612eb7db133eb650c27}{unbind}} ()
+\begin{DoxyCompactList}\small\item\em Unbinds the V\+AO held in this object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a3e389a8872837f0b1ac4c3e14d9b42cb}{create\+Model}} (float $\ast$pos\+Data, int pos\+Size, float $\ast$colour\+Data, int colour\+Size, G\+Luint $\ast$indices\+Data, int indices\+Size, glm\+::mat4 world\+Transform)
+\begin{DoxyCompactList}\small\item\em Create a model by assigning vertices data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_acae90d69dae663bc25a1e5bf845b15f7}{set\+Position\+Data}} (int mode, float $\ast$pos\+Data, int pos\+Size)
+\begin{DoxyCompactList}\small\item\em Sets the positions of the model\textquotesingle{}s vertices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_ad9156e7048121b2be818ecff5bd74f32}{set\+Colour\+Data}} (int mode, float $\ast$colour\+Data, int colour\+Size)
+\begin{DoxyCompactList}\small\item\em Sets the colour of the model\textquotesingle{}s vertices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a9a40e737811697885ff4ad52dfe26a17}{set\+Indices\+Data}} (int mode, G\+Luint $\ast$indices\+Data, int indices\+Size)
+\begin{DoxyCompactList}\small\item\em Sets the indices for the model. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_model_a1f8ad17b84669d2d362571ac14ef291e}{get\+World\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Returns the transform for the model. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_model_a162f8637628e3383d64f256a17e53607}{get\+Animation\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Returns the transform of the animation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_model_a886e5a8ce2a82edf3ec606595b97124d}{get\+Show\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Returns whether the model should be rendered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a7d674b27829ab2d4cc5c1a612ead1849}{show\+Model}} (bool value)
+\begin{DoxyCompactList}\small\item\em Declare whether the model should be rendered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a1bc07ffb07ef7f9a54686668b6cde431}{set\+Run\+Animation}} (bool value)
+\begin{DoxyCompactList}\small\item\em Declare whether the model should animate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a81c14f9c5f95a85df47dc7fa4661edb1}{run\+Animation}} (int time, int animation\+Type)
+\begin{DoxyCompactList}\small\item\em Runs the model\textquotesingle{}s animation, 0 for Scale animation, 1 for rotation animation, 2 for colour rotation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_aa983e87d1f715053cec1df7c2025663f}{delete\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Delete all the buffers (V\+BO) \end{DoxyCompactList}\item 
+G\+Luint \mbox{\hyperlink{class_model_a51497dc5466907114a5c2931b86b03e6}{get\+Indicies\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Returns the indices buffer handle. \end{DoxyCompactList}\item 
+G\+Luint \mbox{\hyperlink{class_model_a732f710d9ef4e72caed7122567950afb}{get\+Index\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the indices count. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_model}{Model}}. 
+
+By\+: Dan Bullin (P14132258)~\newline
+This class creates a Open\+GL V\+AO, multiple GL V\+B\+Os to store data for a model~\newline
+This class is an OO implementation of a V\+AO~\newline
+While the model class can be instantiated, templates have been made such as Unfolded \mbox{\hyperlink{class_cube}{Cube}}, \mbox{\hyperlink{class_kite}{Kite}}, etc which inherit this class. Instantiate them~\newline
+Child classes should call \mbox{\hyperlink{class_model_a3e389a8872837f0b1ac4c3e14d9b42cb}{create\+Model()}} in their constructor Call \mbox{\hyperlink{class_model_a105aeca6a0c7389edf931eff6a91b1ab}{bind()}} to bind this object\textquotesingle{}s V\+AO 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_model_ae3b375de5f6df4faf74a95d64748e048}\label{class_model_ae3b375de5f6df4faf74a95d64748e048}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default Constructor. 
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_a105aeca6a0c7389edf931eff6a91b1ab}\label{class_model_a105aeca6a0c7389edf931eff6a91b1ab}} 
+\index{Model@{Model}!bind@{bind}}
+\index{bind@{bind}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Model\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Binds the V\+AO held in this object. 
+
+\mbox{\hyperlink{class_model_a105aeca6a0c7389edf931eff6a91b1ab}{bind()}} \mbox{\Hypertarget{class_model_a3e389a8872837f0b1ac4c3e14d9b42cb}\label{class_model_a3e389a8872837f0b1ac4c3e14d9b42cb}} 
+\index{Model@{Model}!createModel@{createModel}}
+\index{createModel@{createModel}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily void Model\+::create\+Model (\begin{DoxyParamCaption}\item[{float $\ast$}]{pos\+Data,  }\item[{int}]{pos\+Size,  }\item[{float $\ast$}]{colour\+Data,  }\item[{int}]{colour\+Size,  }\item[{G\+Luint $\ast$}]{indices\+Data,  }\item[{int}]{indices\+Size,  }\item[{glm\+::mat4}]{world\+Transform }\end{DoxyParamCaption})}
+
+
+
+Create a model by assigning vertices data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+Data} & a float$\ast$ -\/ A pointer to the position data \\
+\hline
+{\em pos\+Size} & an int -\/ The size of the position data in bytes \\
+\hline
+{\em colour\+Data} & a float$\ast$ -\/ A pointer to the colour data \\
+\hline
+{\em colour\+Size} & an int -\/ The size of the colour data in bytes \\
+\hline
+{\em indices\+Data} & a G\+Luint$\ast$ -\/ A pointer to the indices data \\
+\hline
+{\em indices\+Size} & an int -\/ The size of the indices data in bytes \\
+\hline
+{\em world\+Transform} & a glm\+::mat4 -\/ The world transformation from local coords \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_aa983e87d1f715053cec1df7c2025663f}\label{class_model_aa983e87d1f715053cec1df7c2025663f}} 
+\index{Model@{Model}!deleteBuffer@{deleteBuffer}}
+\index{deleteBuffer@{deleteBuffer}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{deleteBuffer()}{deleteBuffer()}}
+{\footnotesize\ttfamily void Model\+::delete\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delete all the buffers (V\+BO) 
+
+\mbox{\hyperlink{class_model_aa983e87d1f715053cec1df7c2025663f}{delete\+Buffer()}} \mbox{\Hypertarget{class_model_a162f8637628e3383d64f256a17e53607}\label{class_model_a162f8637628e3383d64f256a17e53607}} 
+\index{Model@{Model}!getAnimationTransform@{getAnimationTransform}}
+\index{getAnimationTransform@{getAnimationTransform}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getAnimationTransform()}{getAnimationTransform()}}
+{\footnotesize\ttfamily glm\+::mat4 Model\+::get\+Animation\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the transform of the animation. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The animation transform for the model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a732f710d9ef4e72caed7122567950afb}\label{class_model_a732f710d9ef4e72caed7122567950afb}} 
+\index{Model@{Model}!getIndexSize@{getIndexSize}}
+\index{getIndexSize@{getIndexSize}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getIndexSize()}{getIndexSize()}}
+{\footnotesize\ttfamily G\+Luint Model\+::get\+Index\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the indices count. 
+
+\begin{DoxyReturn}{Returns}
+a G\+Luint -\/ The number of indices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a51497dc5466907114a5c2931b86b03e6}\label{class_model_a51497dc5466907114a5c2931b86b03e6}} 
+\index{Model@{Model}!getIndiciesHandle@{getIndiciesHandle}}
+\index{getIndiciesHandle@{getIndiciesHandle}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getIndiciesHandle()}{getIndiciesHandle()}}
+{\footnotesize\ttfamily G\+Luint Model\+::get\+Indicies\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the indices buffer handle. 
+
+\begin{DoxyReturn}{Returns}
+a G\+Luint -\/ The handle to the indices buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a886e5a8ce2a82edf3ec606595b97124d}\label{class_model_a886e5a8ce2a82edf3ec606595b97124d}} 
+\index{Model@{Model}!getShowModel@{getShowModel}}
+\index{getShowModel@{getShowModel}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getShowModel()}{getShowModel()}}
+{\footnotesize\ttfamily bool Model\+::get\+Show\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns whether the model should be rendered. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Whether the model needs to be rendered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a1f8ad17b84669d2d362571ac14ef291e}\label{class_model_a1f8ad17b84669d2d362571ac14ef291e}} 
+\index{Model@{Model}!getWorldTransform@{getWorldTransform}}
+\index{getWorldTransform@{getWorldTransform}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getWorldTransform()}{getWorldTransform()}}
+{\footnotesize\ttfamily glm\+::mat4 Model\+::get\+World\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the transform for the model. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The world transform for the model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a81c14f9c5f95a85df47dc7fa4661edb1}\label{class_model_a81c14f9c5f95a85df47dc7fa4661edb1}} 
+\index{Model@{Model}!runAnimation@{runAnimation}}
+\index{runAnimation@{runAnimation}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{runAnimation()}{runAnimation()}}
+{\footnotesize\ttfamily void Model\+::run\+Animation (\begin{DoxyParamCaption}\item[{int}]{time,  }\item[{int}]{animation\+Type }\end{DoxyParamCaption})}
+
+
+
+Runs the model\textquotesingle{}s animation, 0 for Scale animation, 1 for rotation animation, 2 for colour rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & an int -\/ Time elapsed which defines animation speed \\
+\hline
+{\em animation\+Type} & an int -\/ Runs animations labelled with an index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_ad9156e7048121b2be818ecff5bd74f32}\label{class_model_ad9156e7048121b2be818ecff5bd74f32}} 
+\index{Model@{Model}!setColourData@{setColourData}}
+\index{setColourData@{setColourData}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setColourData()}{setColourData()}}
+{\footnotesize\ttfamily void Model\+::set\+Colour\+Data (\begin{DoxyParamCaption}\item[{int}]{mode,  }\item[{float $\ast$}]{colour\+Data,  }\item[{int}]{colour\+Size }\end{DoxyParamCaption})}
+
+
+
+Sets the colour of the model\textquotesingle{}s vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & an int -\/ Declare buffer size. 0 for Yes, 1 for No \\
+\hline
+{\em colour\+Data} & a float$\ast$ -\/ A pointer to the colour data \\
+\hline
+{\em colour\+Size} & an int -\/ The size of the colour data in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a9a40e737811697885ff4ad52dfe26a17}\label{class_model_a9a40e737811697885ff4ad52dfe26a17}} 
+\index{Model@{Model}!setIndicesData@{setIndicesData}}
+\index{setIndicesData@{setIndicesData}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setIndicesData()}{setIndicesData()}}
+{\footnotesize\ttfamily void Model\+::set\+Indices\+Data (\begin{DoxyParamCaption}\item[{int}]{mode,  }\item[{G\+Luint $\ast$}]{indices\+Data,  }\item[{int}]{indices\+Size }\end{DoxyParamCaption})}
+
+
+
+Sets the indices for the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & an int -\/ Declare buffer size. 0 for Yes, 1 for No \\
+\hline
+{\em indices\+Data} & a G\+Luint$\ast$ -\/ A pointer to the indices data \\
+\hline
+{\em indices\+Size} & an int -\/ The size of the indices data in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_acae90d69dae663bc25a1e5bf845b15f7}\label{class_model_acae90d69dae663bc25a1e5bf845b15f7}} 
+\index{Model@{Model}!setPositionData@{setPositionData}}
+\index{setPositionData@{setPositionData}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setPositionData()}{setPositionData()}}
+{\footnotesize\ttfamily void Model\+::set\+Position\+Data (\begin{DoxyParamCaption}\item[{int}]{mode,  }\item[{float $\ast$}]{pos\+Data,  }\item[{int}]{pos\+Size }\end{DoxyParamCaption})}
+
+
+
+Sets the positions of the model\textquotesingle{}s vertices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & an int -\/ Declare buffer size. 0 for Yes, 1 for No \\
+\hline
+{\em pos\+Data} & a float$\ast$ -\/ A pointer to the position data \\
+\hline
+{\em pos\+Size} & an int -\/ The size of the position data in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a1bc07ffb07ef7f9a54686668b6cde431}\label{class_model_a1bc07ffb07ef7f9a54686668b6cde431}} 
+\index{Model@{Model}!setRunAnimation@{setRunAnimation}}
+\index{setRunAnimation@{setRunAnimation}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setRunAnimation()}{setRunAnimation()}}
+{\footnotesize\ttfamily void Model\+::set\+Run\+Animation (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Declare whether the model should animate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & a bool -\/ Whether to run the model\textquotesingle{}s animation or not \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a7d674b27829ab2d4cc5c1a612ead1849}\label{class_model_a7d674b27829ab2d4cc5c1a612ead1849}} 
+\index{Model@{Model}!showModel@{showModel}}
+\index{showModel@{showModel}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{showModel()}{showModel()}}
+{\footnotesize\ttfamily void Model\+::show\+Model (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Declare whether the model should be rendered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & a bool -\/ Whether to rendered the model or not \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a2e0d7c12f6049612eb7db133eb650c27}\label{class_model_a2e0d7c12f6049612eb7db133eb650c27}} 
+\index{Model@{Model}!unbind@{unbind}}
+\index{unbind@{unbind}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily void Model\+::unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unbinds the V\+AO held in this object. 
+
+\mbox{\hyperlink{class_model_a2e0d7c12f6049612eb7db133eb650c27}{unbind()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\mbox{\hyperlink{_model_8h}{Model.\+h}}\item 
+C\+:/doc/src/src/\mbox{\hyperlink{_model_8cpp}{Model.\+cpp}}\end{DoxyCompactItemize}

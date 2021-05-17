@@ -1,0 +1,40 @@
+\hypertarget{glslprogram_8h}{}\doxysection{C\+:/doc/src/include/glslprogram.h File Reference}
+\label{glslprogram_8h}\index{C:/doc/src/include/glslprogram.h@{C:/doc/src/include/glslprogram.h}}
+
+
+Header file for glslprogram.  
+
+
+{\ttfamily \#include \char`\"{}gl\+\_\+core\+\_\+4\+\_\+3.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$glm.\+hpp$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_g_l_s_l_program_exception}{G\+L\+S\+L\+Program\+Exception}}
+\item 
+class \mbox{\hyperlink{class_g_l_s_l_program}{G\+L\+S\+L\+Program}}
+\begin{DoxyCompactList}\small\item\em A glslprogram. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{glslprogram_8h_a5da03bdfde28d414fcf090182b3b8177}\label{glslprogram_8h_a5da03bdfde28d414fcf090182b3b8177}} 
+enum {\bfseries G\+L\+S\+L\+Shader\+Type} \{ \newline
+{\bfseries V\+E\+R\+T\+EX} = gl\+::V\+E\+R\+T\+E\+X\+\_\+\+S\+H\+A\+D\+ER, 
+{\bfseries F\+R\+A\+G\+M\+E\+NT} = gl\+::F\+R\+A\+G\+M\+E\+N\+T\+\_\+\+S\+H\+A\+D\+ER, 
+{\bfseries G\+E\+O\+M\+E\+T\+RY} = gl\+::G\+E\+O\+M\+E\+T\+R\+Y\+\_\+\+S\+H\+A\+D\+ER, 
+{\bfseries T\+E\+S\+S\+\_\+\+C\+O\+N\+T\+R\+OL} = gl\+::T\+E\+S\+S\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+S\+H\+A\+D\+ER, 
+\newline
+{\bfseries T\+E\+S\+S\+\_\+\+E\+V\+A\+L\+U\+A\+T\+I\+ON} = gl\+::T\+E\+S\+S\+\_\+\+E\+V\+A\+L\+U\+A\+T\+I\+O\+N\+\_\+\+S\+H\+A\+D\+ER, 
+{\bfseries C\+O\+M\+P\+U\+TE} = gl\+::C\+O\+M\+P\+U\+T\+E\+\_\+\+S\+H\+A\+D\+ER
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for glslprogram. 
+
+By\+: Dan Bullin (P14132258)~\newline
+Creates, compiles and runs shader programs 

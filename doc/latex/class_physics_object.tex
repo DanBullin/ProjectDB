@@ -1,0 +1,142 @@
+\hypertarget{class_physics_object}{}\doxysection{Physics\+Object Class Reference}
+\label{class_physics_object}\index{PhysicsObject@{PhysicsObject}}
+
+
+A \mbox{\hyperlink{class_physics_object}{Physics\+Object}}.  
+
+
+
+
+{\ttfamily \#include $<$Physics\+Object.\+h$>$}
+
+Inheritance diagram for Physics\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_physics_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_physics_object_aec7e0eb9e351ee3ce7af87e96f39ad5b}{Physics\+Object}} (b2\+World $\ast$world)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_physics_object_a2172e8b71176e3a54d6a8f5ff15d4178}{$\sim$\+Physics\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics_object_a3dc59b2886aa030ce41af126c6f12f91}{set\+User\+Data}} (void $\ast$data)
+\begin{DoxyCompactList}\small\item\em Set the userdata of the body. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_physics_object_a8a445999733ebc0511e39986a1c0c7a6}{enter\+Collision}} (const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$collider, const bool fixture\+A\+Sensor, const bool fixture\+B\+Sensor)
+\begin{DoxyCompactList}\small\item\em Action to run when this object collides. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_physics_object_a52a7e1affe312a862aa2f1c5d30d48b3}{leave\+Collision}} (const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$collider, const bool fixture\+A\+Sensor, const bool fixture\+B\+Sensor)
+\begin{DoxyCompactList}\small\item\em Action to run when this object leaves a collision. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physics_object_aade3e188632a735f70954c6e6aa8f0b8}\label{class_physics_object_aade3e188632a735f70954c6e6aa8f0b8}} 
+b2\+World $\ast$ \mbox{\hyperlink{class_physics_object_aade3e188632a735f70954c6e6aa8f0b8}{m\+\_\+world}}
+\begin{DoxyCompactList}\small\item\em The physics world. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_object_ab5a6a505fbdada47069c5a632cd3c259}\label{class_physics_object_ab5a6a505fbdada47069c5a632cd3c259}} 
+b2\+Body $\ast$ \mbox{\hyperlink{class_physics_object_ab5a6a505fbdada47069c5a632cd3c259}{m\+\_\+body}}
+\begin{DoxyCompactList}\small\item\em Box2D body, no need to delete this as B\+O\+X2D will look after it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_physics_object}{Physics\+Object}}. 
+
+A \mbox{\hyperlink{class_physics_object}{Physics\+Object}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_physics_object_aec7e0eb9e351ee3ce7af87e96f39ad5b}\label{class_physics_object_aec7e0eb9e351ee3ce7af87e96f39ad5b}} 
+\index{PhysicsObject@{PhysicsObject}!PhysicsObject@{PhysicsObject}}
+\index{PhysicsObject@{PhysicsObject}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{PhysicsObject()}{PhysicsObject()}}
+{\footnotesize\ttfamily Physics\+Object\+::\+Physics\+Object (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & a b2\+World$\ast$ -\/ A pointer to the Box2D world \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics_object_a2172e8b71176e3a54d6a8f5ff15d4178}\label{class_physics_object_a2172e8b71176e3a54d6a8f5ff15d4178}} 
+\index{PhysicsObject@{PhysicsObject}!````~PhysicsObject@{$\sim$PhysicsObject}}
+\index{````~PhysicsObject@{$\sim$PhysicsObject}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$PhysicsObject()}{~PhysicsObject()}}
+{\footnotesize\ttfamily Physics\+Object\+::$\sim$\+Physics\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destructor() 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics_object_a8a445999733ebc0511e39986a1c0c7a6}\label{class_physics_object_a8a445999733ebc0511e39986a1c0c7a6}} 
+\index{PhysicsObject@{PhysicsObject}!enterCollision@{enterCollision}}
+\index{enterCollision@{enterCollision}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{enterCollision()}{enterCollision()}}
+{\footnotesize\ttfamily void Physics\+Object\+::enter\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{collider,  }\item[{const bool}]{fixture\+A\+Sensor,  }\item[{const bool}]{fixture\+B\+Sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Action to run when this object collides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & a const Physics\+Object$\ast$ -\/ A pointer to the colliding object \\
+\hline
+{\em fixture\+A\+Sensor} & a const bool -\/ Is this object a sensor \\
+\hline
+{\em fixture\+B\+Sensor} & a const bool -\/ Is this colliding object a sensor \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_player_a6b91ea2b0fa28fed732961c535507528}{Player}}, \mbox{\hyperlink{class_enemy_a05bb6bcf8b2c74dad85c7eae008b4d98}{Enemy}}, \mbox{\hyperlink{class_door_sensor_ad7d6ea15672d08c6a3c647ee4108947a}{Door\+Sensor}}, \mbox{\hyperlink{class_gem_a69af1da5f712e9a7f2b5e82a0eaba985}{Gem}}, and \mbox{\hyperlink{class_key_a7350a96e73aa0f02ef8a16f369f1b34d}{Key}}.
+
+\mbox{\Hypertarget{class_physics_object_a52a7e1affe312a862aa2f1c5d30d48b3}\label{class_physics_object_a52a7e1affe312a862aa2f1c5d30d48b3}} 
+\index{PhysicsObject@{PhysicsObject}!leaveCollision@{leaveCollision}}
+\index{leaveCollision@{leaveCollision}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{leaveCollision()}{leaveCollision()}}
+{\footnotesize\ttfamily void Physics\+Object\+::leave\+Collision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{collider,  }\item[{const bool}]{fixture\+A\+Sensor,  }\item[{const bool}]{fixture\+B\+Sensor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Action to run when this object leaves a collision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & a const Physics\+Object$\ast$ -\/ A pointer to the colliding object \\
+\hline
+{\em fixture\+A\+Sensor} & a const bool -\/ Is this object a sensor \\
+\hline
+{\em fixture\+B\+Sensor} & a const bool -\/ Is this colliding object a sensor \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_player_a1557ea854181eaa23acc2e85d772c38e}{Player}}.
+
+\mbox{\Hypertarget{class_physics_object_a3dc59b2886aa030ce41af126c6f12f91}\label{class_physics_object_a3dc59b2886aa030ce41af126c6f12f91}} 
+\index{PhysicsObject@{PhysicsObject}!setUserData@{setUserData}}
+\index{setUserData@{setUserData}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{setUserData()}{setUserData()}}
+{\footnotesize\ttfamily void Physics\+Object\+::set\+User\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Set the userdata of the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a void$\ast$ -\/ A pointer to the data to store \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Game\+Objects/\mbox{\hyperlink{_physics_object_8h}{Physics\+Object.\+h}}\item 
+C\+:/doc/src/src/\+Game\+Objects/\mbox{\hyperlink{_physics_object_8cpp}{Physics\+Object.\+cpp}}\end{DoxyCompactItemize}

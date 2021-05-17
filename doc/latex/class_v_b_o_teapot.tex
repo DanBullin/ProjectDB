@@ -1,0 +1,96 @@
+\hypertarget{class_v_b_o_teapot}{}\doxysection{V\+B\+O\+Teapot Class Reference}
+\label{class_v_b_o_teapot}\index{VBOTeapot@{VBOTeapot}}
+Inheritance diagram for V\+B\+O\+Teapot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_v_b_o_teapot}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_v_b_o_teapot_a170d24c55300fbf256ae0c495d826151}{V\+B\+O\+Teapot}} (int grid, mat4 lid\+Transform)
+\begin{DoxyCompactList}\small\item\em Constructor requiring grid and lid transform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_v_b_o_teapot_a1e173961521af76a48a00eb74cad5a44}{render}} () const
+\begin{DoxyCompactList}\small\item\em Render the teapot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_v_b_o_teapot_a4ba0f2becc27e34566ec65e985db5e51}{set\+Material}} (vec3 ambient, vec3 diffuse, vec3 specular, float shiny)
+\begin{DoxyCompactList}\small\item\em Set the object\textquotesingle{}s material. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structmaterial}{material}} \mbox{\hyperlink{class_v_b_o_teapot_a7ed722b391eaf0e99cd4543b031128d0}{get\+Material}} ()
+\begin{DoxyCompactList}\small\item\em Get the object\textquotesingle{}s material. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_v_b_o_teapot_a170d24c55300fbf256ae0c495d826151}\label{class_v_b_o_teapot_a170d24c55300fbf256ae0c495d826151}} 
+\index{VBOTeapot@{VBOTeapot}!VBOTeapot@{VBOTeapot}}
+\index{VBOTeapot@{VBOTeapot}!VBOTeapot@{VBOTeapot}}
+\doxysubsubsection{\texorpdfstring{VBOTeapot()}{VBOTeapot()}}
+{\footnotesize\ttfamily V\+B\+O\+Teapot\+::\+V\+B\+O\+Teapot (\begin{DoxyParamCaption}\item[{int}]{grid,  }\item[{mat4}]{lid\+Transform }\end{DoxyParamCaption})}
+
+
+
+Constructor requiring grid and lid transform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grid} & an int -\/ A grid \\
+\hline
+{\em lid\+Transform} & a mat4 -\/ The lid transform \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_v_b_o_teapot_a7ed722b391eaf0e99cd4543b031128d0}\label{class_v_b_o_teapot_a7ed722b391eaf0e99cd4543b031128d0}} 
+\index{VBOTeapot@{VBOTeapot}!getMaterial@{getMaterial}}
+\index{getMaterial@{getMaterial}!VBOTeapot@{VBOTeapot}}
+\doxysubsubsection{\texorpdfstring{getMaterial()}{getMaterial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmaterial}{material}} V\+B\+O\+Teapot\+::get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the object\textquotesingle{}s material. 
+
+\begin{DoxyReturn}{Returns}
+a material -\/ The object\textquotesingle{}s material 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_v_b_o_teapot_a1e173961521af76a48a00eb74cad5a44}\label{class_v_b_o_teapot_a1e173961521af76a48a00eb74cad5a44}} 
+\index{VBOTeapot@{VBOTeapot}!render@{render}}
+\index{render@{render}!VBOTeapot@{VBOTeapot}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void V\+B\+O\+Teapot\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Render the teapot. 
+
+\mbox{\hyperlink{class_v_b_o_teapot_a1e173961521af76a48a00eb74cad5a44}{render()}} 
+
+Implements \mbox{\hyperlink{class_drawable_a773dfc1e1dc02e4156204af3939d04d1}{Drawable}}.
+
+\mbox{\Hypertarget{class_v_b_o_teapot_a4ba0f2becc27e34566ec65e985db5e51}\label{class_v_b_o_teapot_a4ba0f2becc27e34566ec65e985db5e51}} 
+\index{VBOTeapot@{VBOTeapot}!setMaterial@{setMaterial}}
+\index{setMaterial@{setMaterial}!VBOTeapot@{VBOTeapot}}
+\doxysubsubsection{\texorpdfstring{setMaterial()}{setMaterial()}}
+{\footnotesize\ttfamily void V\+B\+O\+Teapot\+::set\+Material (\begin{DoxyParamCaption}\item[{vec3}]{ambient,  }\item[{vec3}]{diffuse,  }\item[{vec3}]{specular,  }\item[{float}]{shiny }\end{DoxyParamCaption})}
+
+
+
+Set the object\textquotesingle{}s material. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ambient} & a vec3 -\/ The ambient light reflectivity \\
+\hline
+{\em diffuse} & a vec3 -\/ The diffuse light reflectivity \\
+\hline
+{\em specular} & a vec3 -\/ The specular light reflectivity \\
+\hline
+{\em shiny} & a float -\/ The specular reflection \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\mbox{\hyperlink{vboteapot_8h}{vboteapot.\+h}}\item 
+C\+:/doc/src/src/\mbox{\hyperlink{vboteapot_8cpp}{vboteapot.\+cpp}}\end{DoxyCompactItemize}

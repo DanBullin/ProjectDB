@@ -1,0 +1,52 @@
+\hypertarget{glslprogram_8cpp}{}\doxysection{C\+:/doc/src/src/glslprogram.cpp File Reference}
+\label{glslprogram_8cpp}\index{C:/doc/src/src/glslprogram.cpp@{C:/doc/src/src/glslprogram.cpp}}
+
+
+C\+PP file for glslprogram.  
+
+
+{\ttfamily \#include \char`\"{}glslprogram.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_g_l_s_l_shader_info_1_1shader__file__extension}{G\+L\+S\+L\+Shader\+Info\+::shader\+\_\+file\+\_\+extension}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct shader\+\_\+file\+\_\+extension {\bfseries G\+L\+S\+L\+Shader\+Info\+::extensions} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+C\+PP file for glslprogram. 
+
+By\+: Dan Bullin (P14132258)~\newline
+Creates, compiles and runs shader programs 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{glslprogram_8cpp_file_ab1e4af0f49188899ac66bcfcd501ca9b}\label{glslprogram_8cpp_file_ab1e4af0f49188899ac66bcfcd501ca9b}} 
+\index{glslprogram.cpp@{glslprogram.cpp}!extensions@{extensions}}
+\index{extensions@{extensions}!glslprogram.cpp@{glslprogram.cpp}}
+\doxysubsubsection{\texorpdfstring{extensions}{extensions}}
+{\footnotesize\ttfamily struct shader\+\_\+file\+\_\+extension G\+L\+S\+L\+Shader\+Info\+::extensions\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= }
+\DoxyCodeLine{  \{}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{".vs"}, GLSLShader::VERTEX\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{".vert"}, GLSLShader::VERTEX\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{".gs"}, GLSLShader::GEOMETRY\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{".geom"}, GLSLShader::GEOMETRY\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{".tcs"}, GLSLShader::TESS\_CONTROL\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{".tes"}, GLSLShader::TESS\_EVALUATION\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{".fs"}, GLSLShader::FRAGMENT\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{".frag"}, GLSLShader::FRAGMENT\},}
+\DoxyCodeLine{    \{\textcolor{stringliteral}{".cs"}, GLSLShader::COMPUTE\}   }
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}

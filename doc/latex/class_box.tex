@@ -1,0 +1,104 @@
+\hypertarget{class_box}{}\doxysection{Box Class Reference}
+\label{class_box}\index{Box@{Box}}
+
+
+A \mbox{\hyperlink{class_box}{Box}}.  
+
+
+
+
+{\ttfamily \#include $<$Box.\+h$>$}
+
+Inheritance diagram for Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_box}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_box_a431929fb8164a11d156d91eb1e861d84}{Box}} (b2\+World $\ast$world, const sf\+::\+Vector2f \&position, const sf\+::\+Vector2f \&size)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_box_ac61a8054016c4b825028a6dc869905fc}{contains}} (const sf\+::\+Vector2f pos) override
+\begin{DoxyCompactList}\small\item\em Does this object contain the point passed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_box_a9c0b3d720fcc721765c1b97307275022}{update}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game) override
+\begin{DoxyCompactList}\small\item\em Update the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_box}{Box}}. 
+
+A \mbox{\hyperlink{class_box}{Box}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_box_a431929fb8164a11d156d91eb1e861d84}\label{class_box_a431929fb8164a11d156d91eb1e861d84}} 
+\index{Box@{Box}!Box@{Box}}
+\index{Box@{Box}!Box@{Box}}
+\doxysubsubsection{\texorpdfstring{Box()}{Box()}}
+{\footnotesize\ttfamily Box\+::\+Box (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{const sf\+::\+Vector2f \&}]{position,  }\item[{const sf\+::\+Vector2f \&}]{size }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & a b2\+World$\ast$ -\/ A pointer to the B\+O\+X2D world \\
+\hline
+{\em position} & a const sf\+::\+Vector2f\& -\/ The position of the box \\
+\hline
+{\em size} & a const sf\+::\+Vector2f\& -\/ The size of the box \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_box_ac61a8054016c4b825028a6dc869905fc}\label{class_box_ac61a8054016c4b825028a6dc869905fc}} 
+\index{Box@{Box}!contains@{contains}}
+\index{contains@{contains}!Box@{Box}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Box\+::contains (\begin{DoxyParamCaption}\item[{const sf\+::\+Vector2f}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Does this object contain the point passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const sf\+::\+Vector2f -\/ The point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the object contain the point 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_game_object_aaf7740bd2bc2f463c46a0c9f69e34b83}{Game\+Object}}.
+
+\mbox{\Hypertarget{class_box_a9c0b3d720fcc721765c1b97307275022}\label{class_box_a9c0b3d720fcc721765c1b97307275022}} 
+\index{Box@{Box}!update@{update}}
+\index{update@{update}!Box@{Box}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Box\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_game_object_a7d45aca280e5d79408cb70b6d8689ff0}{Game\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Game\+Objects/\+Objects/\+Physics/\mbox{\hyperlink{_box_8h}{Box.\+h}}\item 
+C\+:/doc/src/src/\+Game\+Objects/\+Objects/\+Physics/\mbox{\hyperlink{_box_8cpp}{Box.\+cpp}}\end{DoxyCompactItemize}

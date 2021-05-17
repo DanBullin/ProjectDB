@@ -1,0 +1,174 @@
+\hypertarget{class_vertex_array}{}\doxysection{Vertex\+Array Class Reference}
+\label{class_vertex_array}\index{VertexArray@{VertexArray}}
+
+
+A \mbox{\hyperlink{class_vertex_array}{Vertex\+Array}}.  
+
+
+
+
+{\ttfamily \#include $<$Vertex\+Array.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_vertex_array_ab8a2dcce9698f96dac5f9a19c6979d03}\label{class_vertex_array_ab8a2dcce9698f96dac5f9a19c6979d03}} 
+\mbox{\hyperlink{class_vertex_array_ab8a2dcce9698f96dac5f9a19c6979d03}{Vertex\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vertex_array_a82597eb9daba5ad66dd3cf898e159a95}\label{class_vertex_array_a82597eb9daba5ad66dd3cf898e159a95}} 
+\mbox{\hyperlink{class_vertex_array_a82597eb9daba5ad66dd3cf898e159a95}{$\sim$\+Vertex\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vertex_array_a531af8f1987f7f5ccf2edaf7ed50edfd}{bind}} ()
+\begin{DoxyCompactList}\small\item\em Binds the Open\+GL V\+AO held in this object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vertex_array_a66fc16d1db1800bbbaffd08a4336504e}{define\+Array}} (float $\ast$pos\+Data, int pos\+Size, float $\ast$colour\+Data, int colour\+Size, G\+Luint $\ast$indices\+Data, int indices\+Size)
+\begin{DoxyCompactList}\small\item\em Creates V\+B\+Os and defines their storage and data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vertex_array_a3541151d73758025b11ee2310c20a81d}{define\+Position}} (float $\ast$pos\+Data, int pos\+Size)
+\begin{DoxyCompactList}\small\item\em Updates the data storage of the position buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vertex_array_ad0e1d62f058bed31de82a31f7bdc4272}{define\+Colour}} (float $\ast$colour\+Data, int colour\+Size)
+\begin{DoxyCompactList}\small\item\em Updates the data storage of the colour buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vertex_array_a9d9f0d3d6c79e885ee678206c8c77e63}{define\+Indices}} (G\+Luint $\ast$indices\+Data, int indices\+Size)
+\begin{DoxyCompactList}\small\item\em Updates the data storage of the indices buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vertex_array_a65fc09498a4dcd900260d4e3a1582d53}{delete\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Delete all the buffers (V\+BO) \end{DoxyCompactList}\item 
+G\+Luint \mbox{\hyperlink{class_vertex_array_a70b8f4edea3722fc6fc19e4e31daadf0}{get\+Indicies\+Handle}} ()
+\begin{DoxyCompactList}\small\item\em Returns the indices buffer handle. \end{DoxyCompactList}\item 
+G\+Luint \mbox{\hyperlink{class_vertex_array_abf2aa9b13e90ab0e815904dcabd8b6c3}{get\+Index\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the indices count. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_vertex_array}{Vertex\+Array}}. 
+
+This class creates a Open\+GL V\+AO, multiple GL V\+B\+Os to store data for a model~\newline
+This class is an OO implementation of a V\+AO~\newline
+Call \mbox{\hyperlink{class_vertex_array_a531af8f1987f7f5ccf2edaf7ed50edfd}{bind()}} to bind this object\textquotesingle{}s V\+AO 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vertex_array_a531af8f1987f7f5ccf2edaf7ed50edfd}\label{class_vertex_array_a531af8f1987f7f5ccf2edaf7ed50edfd}} 
+\index{VertexArray@{VertexArray}!bind@{bind}}
+\index{bind@{bind}!VertexArray@{VertexArray}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Vertex\+Array\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Binds the Open\+GL V\+AO held in this object. 
+
+\mbox{\hyperlink{class_vertex_array_a531af8f1987f7f5ccf2edaf7ed50edfd}{bind()}} \mbox{\Hypertarget{class_vertex_array_a66fc16d1db1800bbbaffd08a4336504e}\label{class_vertex_array_a66fc16d1db1800bbbaffd08a4336504e}} 
+\index{VertexArray@{VertexArray}!defineArray@{defineArray}}
+\index{defineArray@{defineArray}!VertexArray@{VertexArray}}
+\doxysubsubsection{\texorpdfstring{defineArray()}{defineArray()}}
+{\footnotesize\ttfamily void Vertex\+Array\+::define\+Array (\begin{DoxyParamCaption}\item[{float $\ast$}]{pos\+Data,  }\item[{int}]{pos\+Size,  }\item[{float $\ast$}]{colour\+Data,  }\item[{int}]{colour\+Size,  }\item[{G\+Luint $\ast$}]{indices\+Data,  }\item[{int}]{indices\+Size }\end{DoxyParamCaption})}
+
+
+
+Creates V\+B\+Os and defines their storage and data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+Data} & a float$\ast$ -\/ A pointer to the position data \\
+\hline
+{\em pos\+Size} & an int -\/ The size of the position data in bytes \\
+\hline
+{\em colour\+Data} & a float$\ast$ -\/ A pointer to the colour data \\
+\hline
+{\em colour\+Size} & an int -\/ The size of the colour data in bytes \\
+\hline
+{\em indices\+Data} & a G\+Luint$\ast$ -\/ A pointer to the indices data \\
+\hline
+{\em indices\+Size} & an int -\/ The size of the indices data in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vertex_array_ad0e1d62f058bed31de82a31f7bdc4272}\label{class_vertex_array_ad0e1d62f058bed31de82a31f7bdc4272}} 
+\index{VertexArray@{VertexArray}!defineColour@{defineColour}}
+\index{defineColour@{defineColour}!VertexArray@{VertexArray}}
+\doxysubsubsection{\texorpdfstring{defineColour()}{defineColour()}}
+{\footnotesize\ttfamily void Vertex\+Array\+::define\+Colour (\begin{DoxyParamCaption}\item[{float $\ast$}]{colour\+Data,  }\item[{int}]{colour\+Size }\end{DoxyParamCaption})}
+
+
+
+Updates the data storage of the colour buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colour\+Data} & a float$\ast$ -\/ A pointer to the colour data \\
+\hline
+{\em colour\+Size} & an int -\/ The size of the colour data in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vertex_array_a9d9f0d3d6c79e885ee678206c8c77e63}\label{class_vertex_array_a9d9f0d3d6c79e885ee678206c8c77e63}} 
+\index{VertexArray@{VertexArray}!defineIndices@{defineIndices}}
+\index{defineIndices@{defineIndices}!VertexArray@{VertexArray}}
+\doxysubsubsection{\texorpdfstring{defineIndices()}{defineIndices()}}
+{\footnotesize\ttfamily void Vertex\+Array\+::define\+Indices (\begin{DoxyParamCaption}\item[{G\+Luint $\ast$}]{indices\+Data,  }\item[{int}]{indices\+Size }\end{DoxyParamCaption})}
+
+
+
+Updates the data storage of the indices buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indices\+Data} & a G\+Luint$\ast$ -\/ A pointer to the indices data \\
+\hline
+{\em indices\+Size} & an int -\/ The size of the indices data in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vertex_array_a3541151d73758025b11ee2310c20a81d}\label{class_vertex_array_a3541151d73758025b11ee2310c20a81d}} 
+\index{VertexArray@{VertexArray}!definePosition@{definePosition}}
+\index{definePosition@{definePosition}!VertexArray@{VertexArray}}
+\doxysubsubsection{\texorpdfstring{definePosition()}{definePosition()}}
+{\footnotesize\ttfamily void Vertex\+Array\+::define\+Position (\begin{DoxyParamCaption}\item[{float $\ast$}]{pos\+Data,  }\item[{int}]{pos\+Size }\end{DoxyParamCaption})}
+
+
+
+Updates the data storage of the position buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+Data} & a float$\ast$ -\/ A pointer to the position data \\
+\hline
+{\em pos\+Size} & an int -\/ The size of the position data in bytes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_vertex_array_a65fc09498a4dcd900260d4e3a1582d53}\label{class_vertex_array_a65fc09498a4dcd900260d4e3a1582d53}} 
+\index{VertexArray@{VertexArray}!deleteBuffer@{deleteBuffer}}
+\index{deleteBuffer@{deleteBuffer}!VertexArray@{VertexArray}}
+\doxysubsubsection{\texorpdfstring{deleteBuffer()}{deleteBuffer()}}
+{\footnotesize\ttfamily void Vertex\+Array\+::delete\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delete all the buffers (V\+BO) 
+
+\mbox{\hyperlink{class_vertex_array_a65fc09498a4dcd900260d4e3a1582d53}{delete\+Buffer()}} \mbox{\Hypertarget{class_vertex_array_abf2aa9b13e90ab0e815904dcabd8b6c3}\label{class_vertex_array_abf2aa9b13e90ab0e815904dcabd8b6c3}} 
+\index{VertexArray@{VertexArray}!getIndexSize@{getIndexSize}}
+\index{getIndexSize@{getIndexSize}!VertexArray@{VertexArray}}
+\doxysubsubsection{\texorpdfstring{getIndexSize()}{getIndexSize()}}
+{\footnotesize\ttfamily G\+Luint Vertex\+Array\+::get\+Index\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the indices count. 
+
+\begin{DoxyReturn}{Returns}
+a G\+Luint -\/ The number of indices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vertex_array_a70b8f4edea3722fc6fc19e4e31daadf0}\label{class_vertex_array_a70b8f4edea3722fc6fc19e4e31daadf0}} 
+\index{VertexArray@{VertexArray}!getIndiciesHandle@{getIndiciesHandle}}
+\index{getIndiciesHandle@{getIndiciesHandle}!VertexArray@{VertexArray}}
+\doxysubsubsection{\texorpdfstring{getIndiciesHandle()}{getIndiciesHandle()}}
+{\footnotesize\ttfamily G\+Luint Vertex\+Array\+::get\+Indicies\+Handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the indices buffer handle. 
+
+\begin{DoxyReturn}{Returns}
+a G\+Luint -\/ The handle to the indices buffer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\mbox{\hyperlink{_vertex_array_8h}{Vertex\+Array.\+h}}\item 
+C\+:/doc/src/src/\mbox{\hyperlink{_vertex_array_8cpp}{Vertex\+Array.\+cpp}}\end{DoxyCompactItemize}

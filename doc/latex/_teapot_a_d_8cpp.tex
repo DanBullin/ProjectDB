@@ -1,0 +1,119 @@
+\hypertarget{_teapot_a_d_8cpp}{}\doxysection{C\+:/doc/src/src/\+Teapot\+AD.cpp File Reference}
+\label{_teapot_a_d_8cpp}\index{C:/doc/src/src/TeapotAD.cpp@{C:/doc/src/src/TeapotAD.cpp}}
+
+
+C\+PP file for Teapot\+AD.  
+
+
+{\ttfamily \#include \char`\"{}stdafx.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a2e6ef411e0ff00ad889788b6cde701b5}\label{_teapot_a_d_8cpp_a2e6ef411e0ff00ad889788b6cde701b5}} 
+\#define {\bfseries W\+I\+N\+\_\+\+W\+I\+D\+TH}~800
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a0a33b1743038db1adbbf1045aa839b38}\label{_teapot_a_d_8cpp_a0a33b1743038db1adbbf1045aa839b38}} 
+\#define {\bfseries W\+I\+N\+\_\+\+H\+E\+I\+G\+HT}~600
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a35ada0bbdaa530160679a6ca99be2afa}\label{_teapot_a_d_8cpp_a35ada0bbdaa530160679a6ca99be2afa}} 
+\#define {\bfseries M\+O\+V\+E\+\_\+\+V\+E\+L\+O\+C\+I\+TY}~0.\+01f
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a291b2d989fde1bcefd3f4c3b1c976616}\label{_teapot_a_d_8cpp_a291b2d989fde1bcefd3f4c3b1c976616}} 
+\#define {\bfseries R\+O\+T\+A\+T\+E\+\_\+\+V\+E\+L\+O\+C\+I\+TY}~0.\+001f
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_ab13e858612c64eeef73aff1d8a03945e}\label{_teapot_a_d_8cpp_ab13e858612c64eeef73aff1d8a03945e}} 
+void \mbox{\hyperlink{_teapot_a_d_8cpp_ab13e858612c64eeef73aff1d8a03945e}{print\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{_teapot_a_d_8cpp_ab13e858612c64eeef73aff1d8a03945e}{print\+Menu()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_teapot_a_d_8cpp_a6bec52479312a11696798b50140f227d}{scroll\+\_\+callback}} (G\+L\+F\+Wwindow $\ast$window, double x, double y)
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a2d3d45239c78255c23a70ca558b4d4f1}\label{_teapot_a_d_8cpp_a2d3d45239c78255c23a70ca558b4d4f1}} 
+void \mbox{\hyperlink{_teapot_a_d_8cpp_a2d3d45239c78255c23a70ca558b4d4f1}{initialize\+GL}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{_teapot_a_d_8cpp_a2d3d45239c78255c23a70ca558b4d4f1}{initialize\+G\+L()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_teapot_a_d_8cpp_a8b8e87b9df9c977100d33ce26aa04190}{update}} (float t)
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a0dcdcf298c511db74358109fc74547fa}\label{_teapot_a_d_8cpp_a0dcdcf298c511db74358109fc74547fa}} 
+void \mbox{\hyperlink{_teapot_a_d_8cpp_a0dcdcf298c511db74358109fc74547fa}{main\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{_teapot_a_d_8cpp_a0dcdcf298c511db74358109fc74547fa}{main\+Loop()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_teapot_a_d_8cpp_a442e448bc243b08ec47dc3a068d5c41c}{resize\+GL}} (\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} camera, int w, int h)
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a353674c5af92be7fb389265cde4e5e03}\label{_teapot_a_d_8cpp_a353674c5af92be7fb389265cde4e5e03}} 
+int \mbox{\hyperlink{_teapot_a_d_8cpp_a353674c5af92be7fb389265cde4e5e03}{\+\_\+tmain}} (int argc, \+\_\+\+T\+C\+H\+AR $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em main entry point \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a80de27bd7dc4e2b2ad3d5895b97a70f0}\label{_teapot_a_d_8cpp_a80de27bd7dc4e2b2ad3d5895b97a70f0}} 
+G\+L\+F\+Wwindow $\ast$ {\bfseries window}
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a5a6a0da3bfb11bc9e28477169e688165}\label{_teapot_a_d_8cpp_a5a6a0da3bfb11bc9e28477169e688165}} 
+\mbox{\hyperlink{class_scene_diffuse}{Scene\+Diffuse}} $\ast$ {\bfseries scene}
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a95eb9f7268bb0a02c150a16e8e23185a}\label{_teapot_a_d_8cpp_a95eb9f7268bb0a02c150a16e8e23185a}} 
+\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} {\bfseries camera}
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_ab01ddbb3c048e283b7a354756891f76a}\label{_teapot_a_d_8cpp_ab01ddbb3c048e283b7a354756891f76a}} 
+double {\bfseries last\+Cursor\+PositionX}
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a71989af3098459a55b506bfb259abcde}\label{_teapot_a_d_8cpp_a71989af3098459a55b506bfb259abcde}} 
+double {\bfseries last\+Cursor\+PositionY}
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_af7fa9e14b1fe85cf36c29d751fc0ebbe}\label{_teapot_a_d_8cpp_af7fa9e14b1fe85cf36c29d751fc0ebbe}} 
+double {\bfseries cursor\+PositionX}
+\item 
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a043cbd48cdbba12441238234800fd2ba}\label{_teapot_a_d_8cpp_a043cbd48cdbba12441238234800fd2ba}} 
+double {\bfseries cursor\+PositionY}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+C\+PP file for Teapot\+AD. 
+
+By\+: Dan Bullin (P14132258)~\newline
+This class contains main entry point~\newline
+Sets up the scene, camera and window 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a442e448bc243b08ec47dc3a068d5c41c}\label{_teapot_a_d_8cpp_a442e448bc243b08ec47dc3a068d5c41c}} 
+\index{TeapotAD.cpp@{TeapotAD.cpp}!resizeGL@{resizeGL}}
+\index{resizeGL@{resizeGL}!TeapotAD.cpp@{TeapotAD.cpp}}
+\doxysubsubsection{\texorpdfstring{resizeGL()}{resizeGL()}}
+{\footnotesize\ttfamily void resize\+GL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}}}]{camera,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & a \mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} -\/ The camera \\
+\hline
+{\em w} & an int -\/ The width of the new size \\
+\hline
+{\em h} & an int -\/ The height of the new size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a6bec52479312a11696798b50140f227d}\label{_teapot_a_d_8cpp_a6bec52479312a11696798b50140f227d}} 
+\index{TeapotAD.cpp@{TeapotAD.cpp}!scroll\_callback@{scroll\_callback}}
+\index{scroll\_callback@{scroll\_callback}!TeapotAD.cpp@{TeapotAD.cpp}}
+\doxysubsubsection{\texorpdfstring{scroll\_callback()}{scroll\_callback()}}
+{\footnotesize\ttfamily void scroll\+\_\+callback (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ The current window \\
+\hline
+{\em x} & a double -\/ The x value of the scroll \\
+\hline
+{\em y} & a double -\/ The y value of the scroll \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_teapot_a_d_8cpp_a8b8e87b9df9c977100d33ce26aa04190}\label{_teapot_a_d_8cpp_a8b8e87b9df9c977100d33ce26aa04190}} 
+\index{TeapotAD.cpp@{TeapotAD.cpp}!update@{update}}
+\index{update@{update}!TeapotAD.cpp@{TeapotAD.cpp}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & a float -\/ The time \\
+\hline
+\end{DoxyParams}

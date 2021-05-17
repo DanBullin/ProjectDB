@@ -1,0 +1,140 @@
+\hypertarget{class_physics_maker}{}\doxysection{Physics\+Maker Class Reference}
+\label{class_physics_maker}\index{PhysicsMaker@{PhysicsMaker}}
+
+
+A \mbox{\hyperlink{class_physics_maker}{Physics\+Maker}}.  
+
+
+
+
+{\ttfamily \#include $<$Physics\+Maker.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_physics_maker_ae91a742840736dbd4a34919e29c3570e}{Physics\+Maker}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+b2\+Body $\ast$ \mbox{\hyperlink{class_physics_maker_aef0455e9f72add92c583ab2aefb6a651}{create\+Body}} (b2\+World $\ast$world, const b2\+Body\+Type body\+Type, const b2\+Vec2 position, const float angle, void $\ast$user\+Data)
+\begin{DoxyCompactList}\small\item\em Creates a body and adds to the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics_maker_ace2a9ed9420b98f51a21105c130ef650}{add\+Fixture}} (b2\+Body $\ast$body, const float density, const float friction, const float restitution, const bool sensor, b2\+Shape $\ast$shape)
+\begin{DoxyCompactList}\small\item\em Adds fixture to the body. \end{DoxyCompactList}\item 
+b2\+Polygon\+Shape \mbox{\hyperlink{class_physics_maker_a1b4b3290826d1a3b5edb9866b35b06f6}{create\+Polygon\+Shape}} (const b2\+Vec2 size, const float radius=0.f)
+\begin{DoxyCompactList}\small\item\em Creates a polygon shape. \end{DoxyCompactList}\item 
+b2\+Circle\+Shape \mbox{\hyperlink{class_physics_maker_a6746575070a739fbd260b51b5ae6ecb6}{create\+Circle}} (const float radius)
+\begin{DoxyCompactList}\small\item\em Creates a circle shape. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_physics_maker}{Physics\+Maker}}. 
+
+A \mbox{\hyperlink{class_physics_maker}{Physics\+Maker}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_physics_maker_ae91a742840736dbd4a34919e29c3570e}\label{class_physics_maker_ae91a742840736dbd4a34919e29c3570e}} 
+\index{PhysicsMaker@{PhysicsMaker}!PhysicsMaker@{PhysicsMaker}}
+\index{PhysicsMaker@{PhysicsMaker}!PhysicsMaker@{PhysicsMaker}}
+\doxysubsubsection{\texorpdfstring{PhysicsMaker()}{PhysicsMaker()}}
+{\footnotesize\ttfamily Physics\+Maker\+::\+Physics\+Maker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor() 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics_maker_ace2a9ed9420b98f51a21105c130ef650}\label{class_physics_maker_ace2a9ed9420b98f51a21105c130ef650}} 
+\index{PhysicsMaker@{PhysicsMaker}!addFixture@{addFixture}}
+\index{addFixture@{addFixture}!PhysicsMaker@{PhysicsMaker}}
+\doxysubsubsection{\texorpdfstring{addFixture()}{addFixture()}}
+{\footnotesize\ttfamily void Physics\+Maker\+::add\+Fixture (\begin{DoxyParamCaption}\item[{b2\+Body $\ast$}]{body,  }\item[{const float}]{density,  }\item[{const float}]{friction,  }\item[{const float}]{restitution,  }\item[{const bool}]{sensor,  }\item[{b2\+Shape $\ast$}]{shape }\end{DoxyParamCaption})}
+
+
+
+Adds fixture to the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & a b2\+Body$\ast$ -\/ A pointer to the body you\textquotesingle{}re adding a fixture to \\
+\hline
+{\em density} & a const float -\/ The density of the fixture \\
+\hline
+{\em friction} & a const float -\/ The amount of friction the fixture has \\
+\hline
+{\em restitution} & a const float -\/ The amount of restitution the fixture has \\
+\hline
+{\em sensor} & a const bool -\/ Is the fixture a sensor \\
+\hline
+{\em shape} & a b2\+Shape$\ast$ -\/ A pointer to the shape of the fixture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics_maker_aef0455e9f72add92c583ab2aefb6a651}\label{class_physics_maker_aef0455e9f72add92c583ab2aefb6a651}} 
+\index{PhysicsMaker@{PhysicsMaker}!createBody@{createBody}}
+\index{createBody@{createBody}!PhysicsMaker@{PhysicsMaker}}
+\doxysubsubsection{\texorpdfstring{createBody()}{createBody()}}
+{\footnotesize\ttfamily b2\+Body $\ast$ Physics\+Maker\+::create\+Body (\begin{DoxyParamCaption}\item[{b2\+World $\ast$}]{world,  }\item[{const b2\+Body\+Type}]{body\+Type,  }\item[{const b2\+Vec2}]{position,  }\item[{const float}]{angle,  }\item[{void $\ast$}]{user\+Data }\end{DoxyParamCaption})}
+
+
+
+Creates a body and adds to the world. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & a b2\+World$\ast$ -\/ A pointer to the world \\
+\hline
+{\em body\+Type} & a const b2\+Body\+Type -\/ The body type \\
+\hline
+{\em position} & a const b2\+Vec2 -\/ The position of the body \\
+\hline
+{\em angle} & a const float -\/ The angle of the body \\
+\hline
+{\em user\+Data} & a void$\ast$ -\/ A pointer to the data to store in the body \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a b2\+Body$\ast$ -\/ A pointer to the created body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics_maker_a6746575070a739fbd260b51b5ae6ecb6}\label{class_physics_maker_a6746575070a739fbd260b51b5ae6ecb6}} 
+\index{PhysicsMaker@{PhysicsMaker}!createCircle@{createCircle}}
+\index{createCircle@{createCircle}!PhysicsMaker@{PhysicsMaker}}
+\doxysubsubsection{\texorpdfstring{createCircle()}{createCircle()}}
+{\footnotesize\ttfamily b2\+Circle\+Shape Physics\+Maker\+::create\+Circle (\begin{DoxyParamCaption}\item[{const float}]{radius }\end{DoxyParamCaption})}
+
+
+
+Creates a circle shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & a const float -\/ The radius of the circle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a b2\+Circle\+Shape -\/ The circle shape created 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics_maker_a1b4b3290826d1a3b5edb9866b35b06f6}\label{class_physics_maker_a1b4b3290826d1a3b5edb9866b35b06f6}} 
+\index{PhysicsMaker@{PhysicsMaker}!createPolygonShape@{createPolygonShape}}
+\index{createPolygonShape@{createPolygonShape}!PhysicsMaker@{PhysicsMaker}}
+\doxysubsubsection{\texorpdfstring{createPolygonShape()}{createPolygonShape()}}
+{\footnotesize\ttfamily b2\+Polygon\+Shape Physics\+Maker\+::create\+Polygon\+Shape (\begin{DoxyParamCaption}\item[{const b2\+Vec2}]{size,  }\item[{const float}]{radius = {\ttfamily 0.f} }\end{DoxyParamCaption})}
+
+
+
+Creates a polygon shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & a const b2\+Vec2 -\/ The size of the shape \\
+\hline
+{\em radius} & a const float -\/ The radius of the shape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a b2\+Polygon\+Shape -\/ The polygon shape created 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Game\+Objects/\mbox{\hyperlink{_physics_maker_8h}{Physics\+Maker.\+h}}\item 
+C\+:/doc/src/src/\+Game\+Objects/\mbox{\hyperlink{_physics_maker_8cpp}{Physics\+Maker.\+cpp}}\end{DoxyCompactItemize}

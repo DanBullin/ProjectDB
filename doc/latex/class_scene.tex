@@ -1,0 +1,259 @@
+\hypertarget{class_scene}{}\doxysection{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+
+
+A \mbox{\hyperlink{class_scene}{Scene}}.  
+
+
+
+
+{\ttfamily \#include $<$Scene.\+h$>$}
+
+Inheritance diagram for Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_scene}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_ade3e51c8c4fefae3a94ec4f07ed3f5ce}{Scene}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Constructor passing it a pointer to the game. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Virtual Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_ae76b830c1156bb40bd744afb63776be2}\label{class_scene_ae76b830c1156bb40bd744afb63776be2}} 
+virtual void \mbox{\hyperlink{class_scene_ae76b830c1156bb40bd744afb63776be2}{init\+Scene}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function for initialising scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a7c10ed188fe6f9fe6dedce8d881a43ac}{set\+Enabled}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Sets whether the scene is enabled. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scene_a1b62a819569d6a4d04548f8f8d5727e3}{get\+Enabled}} () const
+\begin{DoxyCompactList}\small\item\em Gets whether the scene is enabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a874361f8bbb3031c8c3423e28002b401}{schedule\+For\+Deletion}} (const bool destroy)
+\begin{DoxyCompactList}\small\item\em Schedule the scene for deletion. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scene_ae688e6a0fe4afeb16899dd16d1682d3e}{get\+Schedule\+For\+Deletion}} () const
+\begin{DoxyCompactList}\small\item\em Gets whether the scene is scheduled for deletion. \end{DoxyCompactList}\item 
+virtual sf\+::\+Vector2f \mbox{\hyperlink{class_scene_aee892c2adb33ecac1afe2396c7aed125}{get\+Scene\+Centre}} ()
+\begin{DoxyCompactList}\small\item\em Gets the scene centre. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ $>$ \& \mbox{\hyperlink{class_scene_a50186d996e291a14ad73c080c657b125}{get\+Objects}} ()
+\begin{DoxyCompactList}\small\item\em Gets a list of all the objects in the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a352181ca8876144929ebcfa70a00a9fb}{update\+Objects}} ()
+\begin{DoxyCompactList}\small\item\em Update all the objects in the scene. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_a9a6078cc3fc29516f5409544ebd78c39}{clear\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Clears the scene of all objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a606e6e64cea4d694b34164a622a4cc5b}{destroy\+Scheduled\+Objects}} ()
+\begin{DoxyCompactList}\small\item\em Destroys any scheduled objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a8a9da839669ad78604b2cac52d5e0470}\label{class_scene_a8a9da839669ad78604b2cac52d5e0470}} 
+virtual void \mbox{\hyperlink{class_scene_a8a9da839669ad78604b2cac52d5e0470}{update}} (const float \&timestep)=0
+\begin{DoxyCompactList}\small\item\em Update the scene. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_a59f6013c3baaaaa0124501bbafc138fd}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Draw the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_scene_a59157f3f1fed1c8edd2accb000060f17}\label{class_scene_a59157f3f1fed1c8edd2accb000060f17}} 
+std\+::string \mbox{\hyperlink{class_scene_a59157f3f1fed1c8edd2accb000060f17}{m\+\_\+name}} = \char`\"{}Default\char`\"{}
+\begin{DoxyCompactList}\small\item\em The name of the scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a87525d9acd167865ad07d18952c1ca2c}\label{class_scene_a87525d9acd167865ad07d18952c1ca2c}} 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_scene_a87525d9acd167865ad07d18952c1ca2c}{m\+\_\+game\+Objects}}
+\begin{DoxyCompactList}\small\item\em Map containing pointers to \mbox{\hyperlink{class_game}{Game}} Objects with a key mapped. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_aaab29d3992c02461f37527cbb5b9f4e0}\label{class_scene_aaab29d3992c02461f37527cbb5b9f4e0}} 
+bool \mbox{\hyperlink{class_scene_aaab29d3992c02461f37527cbb5b9f4e0}{m\+\_\+enabled}}
+\begin{DoxyCompactList}\small\item\em Is the scene enabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_aeafb7f31088fa1294f7ebed410b03780}\label{class_scene_aeafb7f31088fa1294f7ebed410b03780}} 
+bool \mbox{\hyperlink{class_scene_aeafb7f31088fa1294f7ebed410b03780}{m\+\_\+marked\+Deletion}} = false
+\begin{DoxyCompactList}\small\item\em Is the scene scheduled for deletion. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_scene_a20f741942cffb02e697ae76283cce643}\label{class_scene_a20f741942cffb02e697ae76283cce643}} 
+\mbox{\hyperlink{class_game}{Game}} $\ast$ \mbox{\hyperlink{class_scene_a20f741942cffb02e697ae76283cce643}{m\+\_\+game}}
+\begin{DoxyCompactList}\small\item\em A pointer to the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_scene}{Scene}}. 
+
+A \mbox{\hyperlink{class_scene}{Scene}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_ad10176d75a9cc0da56626f682d083507}\label{class_scene_ad10176d75a9cc0da56626f682d083507}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor() \mbox{\Hypertarget{class_scene_ade3e51c8c4fefae3a94ec4f07ed3f5ce}\label{class_scene_ade3e51c8c4fefae3a94ec4f07ed3f5ce}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Constructor passing it a pointer to the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_a3b8cec2e32546713915f8c6303c951f1}\label{class_scene_a3b8cec2e32546713915f8c6303c951f1}} 
+\index{Scene@{Scene}!````~Scene@{$\sim$Scene}}
+\index{````~Scene@{$\sim$Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{$\sim$Scene()}{~Scene()}}
+{\footnotesize\ttfamily Scene\+::$\sim$\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual Destructor. 
+
+Destructor() 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_a9a6078cc3fc29516f5409544ebd78c39}\label{class_scene_a9a6078cc3fc29516f5409544ebd78c39}} 
+\index{Scene@{Scene}!clearScene@{clearScene}}
+\index{clearScene@{clearScene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{clearScene()}{clearScene()}}
+{\footnotesize\ttfamily void Scene\+::clear\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Clears the scene of all objects. 
+
+\mbox{\hyperlink{class_scene_a9a6078cc3fc29516f5409544ebd78c39}{clear\+Scene()}} 
+
+Reimplemented in \mbox{\hyperlink{class_level_a27d847ccf948284f6ec388108d1a2a3c}{Level}}.
+
+\mbox{\Hypertarget{class_scene_a606e6e64cea4d694b34164a622a4cc5b}\label{class_scene_a606e6e64cea4d694b34164a622a4cc5b}} 
+\index{Scene@{Scene}!destroyScheduledObjects@{destroyScheduledObjects}}
+\index{destroyScheduledObjects@{destroyScheduledObjects}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{destroyScheduledObjects()}{destroyScheduledObjects()}}
+{\footnotesize\ttfamily void Scene\+::destroy\+Scheduled\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys any scheduled objects. 
+
+\mbox{\hyperlink{class_scene_a606e6e64cea4d694b34164a622a4cc5b}{destroy\+Scheduled\+Objects()}} \mbox{\Hypertarget{class_scene_a59f6013c3baaaaa0124501bbafc138fd}\label{class_scene_a59f6013c3baaaaa0124501bbafc138fd}} 
+\index{Scene@{Scene}!draw@{draw}}
+\index{draw@{draw}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Scene\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & a sf\+::\+Render\+Target \& -\/ A reference to the Render\+Target \\
+\hline
+{\em states} & a sf\+::\+Render\+States -\/ A render state \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_level_a94f496376dd25c9020b3d5f1052fe4ec}{Level}}.
+
+\mbox{\Hypertarget{class_scene_a1b62a819569d6a4d04548f8f8d5727e3}\label{class_scene_a1b62a819569d6a4d04548f8f8d5727e3}} 
+\index{Scene@{Scene}!getEnabled@{getEnabled}}
+\index{getEnabled@{getEnabled}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getEnabled()}{getEnabled()}}
+{\footnotesize\ttfamily bool Scene\+::get\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets whether the scene is enabled. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Returns if the scene is enabled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_a50186d996e291a14ad73c080c657b125}\label{class_scene_a50186d996e291a14ad73c080c657b125}} 
+\index{Scene@{Scene}!getObjects@{getObjects}}
+\index{getObjects@{getObjects}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getObjects()}{getObjects()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ $>$ \& Scene\+::get\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets a list of all the objects in the scene. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::map$<$std\+::string, Game\+Object$\ast$$>$\& -\/ Returns a reference to a map of game objects of the scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_aee892c2adb33ecac1afe2396c7aed125}\label{class_scene_aee892c2adb33ecac1afe2396c7aed125}} 
+\index{Scene@{Scene}!getSceneCentre@{getSceneCentre}}
+\index{getSceneCentre@{getSceneCentre}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getSceneCentre()}{getSceneCentre()}}
+{\footnotesize\ttfamily sf\+::\+Vector2f Scene\+::get\+Scene\+Centre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the scene centre. 
+
+\begin{DoxyReturn}{Returns}
+a sf\+::\+Vector2f -\/ Returns the centre point of the current scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_ae688e6a0fe4afeb16899dd16d1682d3e}\label{class_scene_ae688e6a0fe4afeb16899dd16d1682d3e}} 
+\index{Scene@{Scene}!getScheduleForDeletion@{getScheduleForDeletion}}
+\index{getScheduleForDeletion@{getScheduleForDeletion}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getScheduleForDeletion()}{getScheduleForDeletion()}}
+{\footnotesize\ttfamily bool Scene\+::get\+Schedule\+For\+Deletion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets whether the scene is scheduled for deletion. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Returns if scene should be destroyed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_a874361f8bbb3031c8c3423e28002b401}\label{class_scene_a874361f8bbb3031c8c3423e28002b401}} 
+\index{Scene@{Scene}!scheduleForDeletion@{scheduleForDeletion}}
+\index{scheduleForDeletion@{scheduleForDeletion}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{scheduleForDeletion()}{scheduleForDeletion()}}
+{\footnotesize\ttfamily void Scene\+::schedule\+For\+Deletion (\begin{DoxyParamCaption}\item[{const bool}]{destroy }\end{DoxyParamCaption})}
+
+
+
+Schedule the scene for deletion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destroy} & a const bool -\/ Destroy the scene \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_a7c10ed188fe6f9fe6dedce8d881a43ac}\label{class_scene_a7c10ed188fe6f9fe6dedce8d881a43ac}} 
+\index{Scene@{Scene}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily void Scene\+::set\+Enabled (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})}
+
+
+
+Sets whether the scene is enabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a const bool -\/ Enable the scene \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_a352181ca8876144929ebcfa70a00a9fb}\label{class_scene_a352181ca8876144929ebcfa70a00a9fb}} 
+\index{Scene@{Scene}!updateObjects@{updateObjects}}
+\index{updateObjects@{updateObjects}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{updateObjects()}{updateObjects()}}
+{\footnotesize\ttfamily void Scene\+::update\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update all the objects in the scene. 
+
+\mbox{\hyperlink{class_scene_a352181ca8876144929ebcfa70a00a9fb}{update\+Objects()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Scene/\mbox{\hyperlink{_scene_8h}{Scene.\+h}}\item 
+C\+:/doc/src/src/\+Scene/\mbox{\hyperlink{_scene_8cpp}{Scene.\+cpp}}\end{DoxyCompactItemize}

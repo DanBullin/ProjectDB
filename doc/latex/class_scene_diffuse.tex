@@ -1,0 +1,307 @@
+\hypertarget{class_scene_diffuse}{}\doxysection{Scene\+Diffuse Class Reference}
+\label{class_scene_diffuse}\index{SceneDiffuse@{SceneDiffuse}}
+Inheritance diagram for Scene\+Diffuse\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scene_diffuse}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_diffuse_aa2b5779c163e45f6030b12083aaa5813}{Scene\+Diffuse}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_diffuse_aac6ef7ec9d5d5a631880019d8c47ef68}{$\sim$\+Scene\+Diffuse}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_a1653dbeb0a9d4972d807475c2a7f46a4}{setup\+Point\+Light}} (\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} camera)
+\begin{DoxyCompactList}\small\item\em Sets up point light properties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_af8b224aa2f9d76e71392467b4c55fa79}{setup\+Spot\+Light}} (\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} camera)
+\begin{DoxyCompactList}\small\item\em Sets up spot light properties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_a9e9d49de5422cad305d16800f948deed}{use\+Toon\+Shading}} (\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} camera)
+\begin{DoxyCompactList}\small\item\em Use toon shading. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_ad33a5f7a4f9e2cee5462cdb7fe900804}{set\+Light\+Params}} (\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} camera)
+\begin{DoxyCompactList}\small\item\em Setup the lighting uniforms. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_a4dba0dd3f0e5d5334075a69a2e57d461}{init\+Scene}} (\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} camera)
+\begin{DoxyCompactList}\small\item\em Initialise the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_a8b90790ae32761ec8dd6fe4a2b7f207c}{update}} (float t)
+\begin{DoxyCompactList}\small\item\em Update the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_a19d55863a1e2a89624262a3e1d29c3f2}{render}} (\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} camera)
+\begin{DoxyCompactList}\small\item\em Render the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_a97097d6020fcf17f71e9985a6914ab29}{resize}} (\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} camera, int, int)
+\begin{DoxyCompactList}\small\item\em Resize viewport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_ad35810f4e9118aa74e89f168e0b2f9e0}{adjust\+Colour}} (int model, float increment)
+\begin{DoxyCompactList}\small\item\em Adjust the material properties of objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_a961ff3f9fe75ac46935e585c295066c0}{adjust\+Light\+Colour}} (float increment)
+\begin{DoxyCompactList}\small\item\em Adjusts the light intensities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_a1b8be2bccce1ad8c0a12fd987509f0ab}{adjust\+Light\+Position}} (vec3 pos)
+\begin{DoxyCompactList}\small\item\em Adjusts light position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_a60442dfc992c0767b0cbdcd3cbf9f84a}{light\+Model\+Enabler}} (string type)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disables certaining A\+DS lighting. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_a6d608e4fa4fc72b503058b573e2b56f8}{switch\+Light\+Types}} (\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} camera, int mode)
+\begin{DoxyCompactList}\small\item\em Switch between lighting types (Point, spot and toon) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_diffuse_a67ae92e12889a6e78836ae995ad5e513}{change\+Background}} ()
+\begin{DoxyCompactList}\small\item\em Changes background colour of window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_scene_diffuse_aee89122cd4fc29c63b2dad58a35d9fa6}\label{class_scene_diffuse_aee89122cd4fc29c63b2dad58a35d9fa6}} 
+int \mbox{\hyperlink{class_scene_diffuse_aee89122cd4fc29c63b2dad58a35d9fa6}{edit\+Model}} = 0
+\begin{DoxyCompactList}\small\item\em Updates which model to edit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_diffuse_aa2b5779c163e45f6030b12083aaa5813}\label{class_scene_diffuse_aa2b5779c163e45f6030b12083aaa5813}} 
+\index{SceneDiffuse@{SceneDiffuse}!SceneDiffuse@{SceneDiffuse}}
+\index{SceneDiffuse@{SceneDiffuse}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{SceneDiffuse()}{SceneDiffuse()}}
+{\footnotesize\ttfamily Scene\+Diffuse\+::\+Scene\+Diffuse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor() \mbox{\Hypertarget{class_scene_diffuse_aac6ef7ec9d5d5a631880019d8c47ef68}\label{class_scene_diffuse_aac6ef7ec9d5d5a631880019d8c47ef68}} 
+\index{SceneDiffuse@{SceneDiffuse}!````~SceneDiffuse@{$\sim$SceneDiffuse}}
+\index{````~SceneDiffuse@{$\sim$SceneDiffuse}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{$\sim$SceneDiffuse()}{~SceneDiffuse()}}
+{\footnotesize\ttfamily Scene\+Diffuse\+::$\sim$\+Scene\+Diffuse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destructor() 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_diffuse_ad35810f4e9118aa74e89f168e0b2f9e0}\label{class_scene_diffuse_ad35810f4e9118aa74e89f168e0b2f9e0}} 
+\index{SceneDiffuse@{SceneDiffuse}!adjustColour@{adjustColour}}
+\index{adjustColour@{adjustColour}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{adjustColour()}{adjustColour()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::adjust\+Colour (\begin{DoxyParamCaption}\item[{int}]{model,  }\item[{float}]{increment }\end{DoxyParamCaption})}
+
+
+
+Adjust the material properties of objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & an int -\/ The model to edit (0 for \mbox{\hyperlink{namespace_teapot}{Teapot}}, 1 for Plane) \\
+\hline
+{\em increment} & an float -\/ The increment to change material reflectivity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_diffuse_a961ff3f9fe75ac46935e585c295066c0}\label{class_scene_diffuse_a961ff3f9fe75ac46935e585c295066c0}} 
+\index{SceneDiffuse@{SceneDiffuse}!adjustLightColour@{adjustLightColour}}
+\index{adjustLightColour@{adjustLightColour}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{adjustLightColour()}{adjustLightColour()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::adjust\+Light\+Colour (\begin{DoxyParamCaption}\item[{float}]{increment }\end{DoxyParamCaption})}
+
+
+
+Adjusts the light intensities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em increment} & an float -\/ The increment to change light intensity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_diffuse_a1b8be2bccce1ad8c0a12fd987509f0ab}\label{class_scene_diffuse_a1b8be2bccce1ad8c0a12fd987509f0ab}} 
+\index{SceneDiffuse@{SceneDiffuse}!adjustLightPosition@{adjustLightPosition}}
+\index{adjustLightPosition@{adjustLightPosition}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{adjustLightPosition()}{adjustLightPosition()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::adjust\+Light\+Position (\begin{DoxyParamCaption}\item[{vec3}]{pos }\end{DoxyParamCaption})}
+
+
+
+Adjusts light position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a vec3 -\/ The position of the light \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_diffuse_a67ae92e12889a6e78836ae995ad5e513}\label{class_scene_diffuse_a67ae92e12889a6e78836ae995ad5e513}} 
+\index{SceneDiffuse@{SceneDiffuse}!changeBackground@{changeBackground}}
+\index{changeBackground@{changeBackground}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{changeBackground()}{changeBackground()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::change\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Changes background colour of window. 
+
+\mbox{\hyperlink{class_scene_diffuse_a67ae92e12889a6e78836ae995ad5e513}{change\+Background()}} \mbox{\Hypertarget{class_scene_diffuse_a4dba0dd3f0e5d5334075a69a2e57d461}\label{class_scene_diffuse_a4dba0dd3f0e5d5334075a69a2e57d461}} 
+\index{SceneDiffuse@{SceneDiffuse}!initScene@{initScene}}
+\index{initScene@{initScene}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{initScene()}{initScene()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::init\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}}}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initialise the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & a \mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} -\/ The camera in the scene \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_a49881bcc96f4e5dad52208498143647e}{Scene}}.
+
+\mbox{\Hypertarget{class_scene_diffuse_a60442dfc992c0767b0cbdcd3cbf9f84a}\label{class_scene_diffuse_a60442dfc992c0767b0cbdcd3cbf9f84a}} 
+\index{SceneDiffuse@{SceneDiffuse}!lightModelEnabler@{lightModelEnabler}}
+\index{lightModelEnabler@{lightModelEnabler}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{lightModelEnabler()}{lightModelEnabler()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::light\+Model\+Enabler (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+
+
+
+Enable/\+Disables certaining A\+DS lighting. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a string -\/ The type of lighting components to enable or disable \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_diffuse_a19d55863a1e2a89624262a3e1d29c3f2}\label{class_scene_diffuse_a19d55863a1e2a89624262a3e1d29c3f2}} 
+\index{SceneDiffuse@{SceneDiffuse}!render@{render}}
+\index{render@{render}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}}}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Render the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & a \mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} -\/ The camera in the scene \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_aa9912b5636f9bb9553b5b745a368d013}{Scene}}.
+
+\mbox{\Hypertarget{class_scene_diffuse_a97097d6020fcf17f71e9985a6914ab29}\label{class_scene_diffuse_a97097d6020fcf17f71e9985a6914ab29}} 
+\index{SceneDiffuse@{SceneDiffuse}!resize@{resize}}
+\index{resize@{resize}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}}}]{camera,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Resize viewport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & a \mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} -\/ The camera in the scene \\
+\hline
+{\em w} & an int -\/ The width of the desired viewport \\
+\hline
+{\em h} & an int -\/ The height of the desired viewport \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_scene_a3f3f53ebc6e30e2c0b958a658dc6e229}{Scene}}.
+
+\mbox{\Hypertarget{class_scene_diffuse_ad33a5f7a4f9e2cee5462cdb7fe900804}\label{class_scene_diffuse_ad33a5f7a4f9e2cee5462cdb7fe900804}} 
+\index{SceneDiffuse@{SceneDiffuse}!setLightParams@{setLightParams}}
+\index{setLightParams@{setLightParams}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{setLightParams()}{setLightParams()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::set\+Light\+Params (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}}}]{camera }\end{DoxyParamCaption})}
+
+
+
+Setup the lighting uniforms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & a \mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} -\/ The camera in the scene \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_diffuse_a1653dbeb0a9d4972d807475c2a7f46a4}\label{class_scene_diffuse_a1653dbeb0a9d4972d807475c2a7f46a4}} 
+\index{SceneDiffuse@{SceneDiffuse}!setupPointLight@{setupPointLight}}
+\index{setupPointLight@{setupPointLight}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{setupPointLight()}{setupPointLight()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::setup\+Point\+Light (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}}}]{camera }\end{DoxyParamCaption})}
+
+
+
+Sets up point light properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & a \mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} -\/ The camera in the scene \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_diffuse_af8b224aa2f9d76e71392467b4c55fa79}\label{class_scene_diffuse_af8b224aa2f9d76e71392467b4c55fa79}} 
+\index{SceneDiffuse@{SceneDiffuse}!setupSpotLight@{setupSpotLight}}
+\index{setupSpotLight@{setupSpotLight}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{setupSpotLight()}{setupSpotLight()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::setup\+Spot\+Light (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}}}]{camera }\end{DoxyParamCaption})}
+
+
+
+Sets up spot light properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & a \mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} -\/ The camera in the scene \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_diffuse_a6d608e4fa4fc72b503058b573e2b56f8}\label{class_scene_diffuse_a6d608e4fa4fc72b503058b573e2b56f8}} 
+\index{SceneDiffuse@{SceneDiffuse}!switchLightTypes@{switchLightTypes}}
+\index{switchLightTypes@{switchLightTypes}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{switchLightTypes()}{switchLightTypes()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::switch\+Light\+Types (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}}}]{camera,  }\item[{int}]{mode }\end{DoxyParamCaption})}
+
+
+
+Switch between lighting types (Point, spot and toon) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & a \mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} -\/ The camera in the scene \\
+\hline
+{\em mode} & an int -\/ The mode of light to use (0 for Point light, 1 for Spotlight) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_diffuse_a8b90790ae32761ec8dd6fe4a2b7f207c}\label{class_scene_diffuse_a8b90790ae32761ec8dd6fe4a2b7f207c}} 
+\index{SceneDiffuse@{SceneDiffuse}!update@{update}}
+\index{update@{update}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::update (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})}
+
+
+
+Update the scene. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & a float -\/ The time step \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_diffuse_a9e9d49de5422cad305d16800f948deed}\label{class_scene_diffuse_a9e9d49de5422cad305d16800f948deed}} 
+\index{SceneDiffuse@{SceneDiffuse}!useToonShading@{useToonShading}}
+\index{useToonShading@{useToonShading}!SceneDiffuse@{SceneDiffuse}}
+\doxysubsubsection{\texorpdfstring{useToonShading()}{useToonShading()}}
+{\footnotesize\ttfamily void Scene\+Diffuse\+::use\+Toon\+Shading (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_quat_camera}{Quat\+Camera}}}]{camera }\end{DoxyParamCaption})}
+
+
+
+Use toon shading. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & a \mbox{\hyperlink{class_quat_camera}{Quat\+Camera}} -\/ The camera in the scene \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\mbox{\hyperlink{scenediffuse_8h}{scenediffuse.\+h}}\item 
+C\+:/doc/src/src/\mbox{\hyperlink{scenediffuse_8cpp}{scenediffuse.\+cpp}}\end{DoxyCompactItemize}

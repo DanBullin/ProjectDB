@@ -1,0 +1,199 @@
+\hypertarget{class_debug_draw}{}\doxysection{Debug\+Draw Class Reference}
+\label{class_debug_draw}\index{DebugDraw@{DebugDraw}}
+
+
+{\ttfamily \#include $<$S\+F\+M\+L\+Debug\+Draw.\+h$>$}
+
+Inheritance diagram for Debug\+Draw\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_debug_draw}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_debug_draw_a1f9c99b818e21078a53d11a5ca6e2c79}{Draw\+Point}} (const b2\+Vec2 \&p, float32 size, const b2\+Color \&color)
+\begin{DoxyCompactList}\small\item\em Draw a point (dot) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_debug_draw_a1562ce91df605efef3cdf300be267cc2}{Draw\+Solid\+Polygon}} (const b2\+Vec2 $\ast$vertices, int32 vertex\+Count, const b2\+Color \&color)
+\begin{DoxyCompactList}\small\item\em Draw a filled polygon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_debug_draw_a14ab8cf80799e57df5414db216552962}{Draw\+Polygon}} (const b2\+Vec2 $\ast$vertices, int32 vertex\+Count, const b2\+Color \&color)
+\begin{DoxyCompactList}\small\item\em Draw the outline of a polygon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_debug_draw_a5adb064981a67fefe7064820006b673e}{Draw\+Circle}} (const b2\+Vec2 \&center, float32 radius, const b2\+Color \&color)
+\begin{DoxyCompactList}\small\item\em Draw a circle outline. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_debug_draw_a82428519034f36a01941dd19d6108bee}{Draw\+Solid\+Circle}} (const b2\+Vec2 \&center, float32 radius, const b2\+Vec2 \&axis, const b2\+Color \&color)
+\begin{DoxyCompactList}\small\item\em Draw a filled circle with axis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_debug_draw_a69927caae41d26f23dea336a1269ee4e}{Draw\+Segment}} (const b2\+Vec2 \&p1, const b2\+Vec2 \&p2, const b2\+Color \&color)
+\begin{DoxyCompactList}\small\item\em Draw line segment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_debug_draw_a6f61d333e6e76865ec4a6099ab31ae75}{Draw\+Transform}} (const b2\+Transform \&xf)
+\begin{DoxyCompactList}\small\item\em Drawa transform -\/ not implemented. \end{DoxyCompactList}\item 
+std\+::vector$<$ sf\+::\+Vertex\+Array $>$ \mbox{\hyperlink{class_debug_draw_ae47bfc7dbe4a66765cc6ca420814aae4}{get\+Shapes}} () const
+\begin{DoxyCompactList}\small\item\em Return the shapes to be drawn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_debug_draw_a2f6d919a63311ccac04b9ecf04041e79}{clear\+Shapes}} ()
+\begin{DoxyCompactList}\small\item\em Clear shape buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_debug_draw}{Debug\+Draw}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_debug_draw_a2f6d919a63311ccac04b9ecf04041e79}\label{class_debug_draw_a2f6d919a63311ccac04b9ecf04041e79}} 
+\index{DebugDraw@{DebugDraw}!clearShapes@{clearShapes}}
+\index{clearShapes@{clearShapes}!DebugDraw@{DebugDraw}}
+\doxysubsubsection{\texorpdfstring{clearShapes()}{clearShapes()}}
+{\footnotesize\ttfamily void Debug\+Draw\+::clear\+Shapes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear shape buffer. 
+
+\mbox{\hyperlink{class_debug_draw_a2f6d919a63311ccac04b9ecf04041e79}{clear\+Shapes()}} \mbox{\Hypertarget{class_debug_draw_a5adb064981a67fefe7064820006b673e}\label{class_debug_draw_a5adb064981a67fefe7064820006b673e}} 
+\index{DebugDraw@{DebugDraw}!DrawCircle@{DrawCircle}}
+\index{DrawCircle@{DrawCircle}!DebugDraw@{DebugDraw}}
+\doxysubsubsection{\texorpdfstring{DrawCircle()}{DrawCircle()}}
+{\footnotesize\ttfamily void Debug\+Draw\+::\+Draw\+Circle (\begin{DoxyParamCaption}\item[{const b2\+Vec2 \&}]{center,  }\item[{float32}]{radius,  }\item[{const b2\+Color \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw a circle outline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & a const b2\+Vec2\& -\/ The center point of the circle \\
+\hline
+{\em radius} & a float32 -\/ The radius of the circle \\
+\hline
+{\em color} & a const b2\+Color\& -\/ The colour of the point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_debug_draw_a1f9c99b818e21078a53d11a5ca6e2c79}\label{class_debug_draw_a1f9c99b818e21078a53d11a5ca6e2c79}} 
+\index{DebugDraw@{DebugDraw}!DrawPoint@{DrawPoint}}
+\index{DrawPoint@{DrawPoint}!DebugDraw@{DebugDraw}}
+\doxysubsubsection{\texorpdfstring{DrawPoint()}{DrawPoint()}}
+{\footnotesize\ttfamily void Debug\+Draw\+::\+Draw\+Point (\begin{DoxyParamCaption}\item[{const b2\+Vec2 \&}]{p,  }\item[{float32}]{size,  }\item[{const b2\+Color \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw a point (dot) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & a const b2\+Vec2\& -\/ The vector of the point to draw \\
+\hline
+{\em size} & a float32 -\/ The size of the point \\
+\hline
+{\em color} & a const b2\+Color\& -\/ The colour of the point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_debug_draw_a14ab8cf80799e57df5414db216552962}\label{class_debug_draw_a14ab8cf80799e57df5414db216552962}} 
+\index{DebugDraw@{DebugDraw}!DrawPolygon@{DrawPolygon}}
+\index{DrawPolygon@{DrawPolygon}!DebugDraw@{DebugDraw}}
+\doxysubsubsection{\texorpdfstring{DrawPolygon()}{DrawPolygon()}}
+{\footnotesize\ttfamily void Debug\+Draw\+::\+Draw\+Polygon (\begin{DoxyParamCaption}\item[{const b2\+Vec2 $\ast$}]{vertices,  }\item[{int32}]{vertex\+Count,  }\item[{const b2\+Color \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw the outline of a polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a const b2\+Vec2$\ast$ -\/ A pointer to the vertices \\
+\hline
+{\em vertex\+Count} & an int32 -\/ The number of vertices \\
+\hline
+{\em color} & a const b2\+Color\& -\/ The colour of the point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_debug_draw_a69927caae41d26f23dea336a1269ee4e}\label{class_debug_draw_a69927caae41d26f23dea336a1269ee4e}} 
+\index{DebugDraw@{DebugDraw}!DrawSegment@{DrawSegment}}
+\index{DrawSegment@{DrawSegment}!DebugDraw@{DebugDraw}}
+\doxysubsubsection{\texorpdfstring{DrawSegment()}{DrawSegment()}}
+{\footnotesize\ttfamily void Debug\+Draw\+::\+Draw\+Segment (\begin{DoxyParamCaption}\item[{const b2\+Vec2 \&}]{p1,  }\item[{const b2\+Vec2 \&}]{p2,  }\item[{const b2\+Color \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw line segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & a const b2\+Vec2\& -\/ The vector of the first point of the line \\
+\hline
+{\em p2} & a const b2\+Vec2\& -\/ The vector of the second point of the line \\
+\hline
+{\em color} & a const b2\+Color\& -\/ The colour of the point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_debug_draw_a82428519034f36a01941dd19d6108bee}\label{class_debug_draw_a82428519034f36a01941dd19d6108bee}} 
+\index{DebugDraw@{DebugDraw}!DrawSolidCircle@{DrawSolidCircle}}
+\index{DrawSolidCircle@{DrawSolidCircle}!DebugDraw@{DebugDraw}}
+\doxysubsubsection{\texorpdfstring{DrawSolidCircle()}{DrawSolidCircle()}}
+{\footnotesize\ttfamily void Debug\+Draw\+::\+Draw\+Solid\+Circle (\begin{DoxyParamCaption}\item[{const b2\+Vec2 \&}]{center,  }\item[{float32}]{radius,  }\item[{const b2\+Vec2 \&}]{axis,  }\item[{const b2\+Color \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw a filled circle with axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & a const b2\+Vec2\& -\/ The center point of the circle \\
+\hline
+{\em radius} & a float32 -\/ The radius of the circle \\
+\hline
+{\em axis} & a const b2\+Vec2\& -\/ The axis the circle is on \\
+\hline
+{\em color} & a const b2\+Color\& -\/ The colour of the point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_debug_draw_a1562ce91df605efef3cdf300be267cc2}\label{class_debug_draw_a1562ce91df605efef3cdf300be267cc2}} 
+\index{DebugDraw@{DebugDraw}!DrawSolidPolygon@{DrawSolidPolygon}}
+\index{DrawSolidPolygon@{DrawSolidPolygon}!DebugDraw@{DebugDraw}}
+\doxysubsubsection{\texorpdfstring{DrawSolidPolygon()}{DrawSolidPolygon()}}
+{\footnotesize\ttfamily void Debug\+Draw\+::\+Draw\+Solid\+Polygon (\begin{DoxyParamCaption}\item[{const b2\+Vec2 $\ast$}]{vertices,  }\item[{int32}]{vertex\+Count,  }\item[{const b2\+Color \&}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw a filled polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a const b2\+Vec2$\ast$ -\/ A pointer to the vertices \\
+\hline
+{\em vertex\+Count} & an int32 -\/ The number of vertices \\
+\hline
+{\em color} & a const b2\+Color\& -\/ The colour of the point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_debug_draw_a6f61d333e6e76865ec4a6099ab31ae75}\label{class_debug_draw_a6f61d333e6e76865ec4a6099ab31ae75}} 
+\index{DebugDraw@{DebugDraw}!DrawTransform@{DrawTransform}}
+\index{DrawTransform@{DrawTransform}!DebugDraw@{DebugDraw}}
+\doxysubsubsection{\texorpdfstring{DrawTransform()}{DrawTransform()}}
+{\footnotesize\ttfamily void Debug\+Draw\+::\+Draw\+Transform (\begin{DoxyParamCaption}\item[{const b2\+Transform \&}]{xf }\end{DoxyParamCaption})}
+
+
+
+Drawa transform -\/ not implemented. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xf} & a const b2\+Transform\& -\/ A reference of the transform \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_debug_draw_ae47bfc7dbe4a66765cc6ca420814aae4}\label{class_debug_draw_ae47bfc7dbe4a66765cc6ca420814aae4}} 
+\index{DebugDraw@{DebugDraw}!getShapes@{getShapes}}
+\index{getShapes@{getShapes}!DebugDraw@{DebugDraw}}
+\doxysubsubsection{\texorpdfstring{getShapes()}{getShapes()}}
+{\footnotesize\ttfamily std\+::vector$<$ sf\+::\+Vertex\+Array $>$ Debug\+Draw\+::get\+Shapes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return the shapes to be drawn. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$sf\+::\+Vertex\+Array$>$ -\/ Returns a vector of vertex arrays 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Physics/\mbox{\hyperlink{_s_f_m_l_debug_draw_8h}{S\+F\+M\+L\+Debug\+Draw.\+h}}\item 
+C\+:/doc/src/src/\+Physics/\mbox{\hyperlink{_s_f_m_l_debug_draw_8cpp}{S\+F\+M\+L\+Debug\+Draw.\+cpp}}\end{DoxyCompactItemize}

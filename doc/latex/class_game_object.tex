@@ -1,0 +1,390 @@
+\hypertarget{class_game_object}{}\doxysection{Game\+Object Class Reference}
+\label{class_game_object}\index{GameObject@{GameObject}}
+
+
+A \mbox{\hyperlink{class_game_object}{Game\+Object}}.  
+
+
+
+
+{\ttfamily \#include $<$Game\+Object.\+h$>$}
+
+Inheritance diagram for Game\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_game_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}{Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}{$\sim$\+Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_game_object_a7b5b5ca6b3754cdfb175cd1938c77f10}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_aa678fd490a71d7e867ce211290eb44a0}{set\+Draw}} (const bool \mbox{\hyperlink{class_game_object_aa6d7650a920e2dd79b0125560faf3807}{draw}})
+\begin{DoxyCompactList}\small\item\em Set whether the object is drawn. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_object_a951d8a02622f8224bf97284c676b3881}{get\+Draw}} () const
+\begin{DoxyCompactList}\small\item\em Get whether the object is drawn. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_object_a4c07ce9dae9bc98d442f80266d03644e}{get\+Animated}} () const
+\begin{DoxyCompactList}\small\item\em Get whether the object is animated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_abaf0d432435ac9034e559d73d371b6b8}{set\+Enabled}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Set whether the object is enabled. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_object_abff095300779ab83a30dd21120271d9e}{get\+Enabled}} () const
+\begin{DoxyCompactList}\small\item\em Get whether the object is enabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_object_afdf576650ff4d28e988e7f6081e05c8d}{schedule\+For\+Deletion}} (const bool destroy)
+\begin{DoxyCompactList}\small\item\em Schedule the object for deletion. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_object_a6edd1d59c8207a8e36cc8560d0696a03}{get\+Schedule\+For\+Deletion}} () const
+\begin{DoxyCompactList}\small\item\em Get whether the object is scheduled for deletion. \end{DoxyCompactList}\item 
+sf\+::\+Drawable $\ast$ \mbox{\hyperlink{class_game_object_ab55f3ac16ed30a44f79f1bd95f88b1ea}{get\+Drawable}} ()
+\begin{DoxyCompactList}\small\item\em Get the S\+F\+ML drawable component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_aa6d7650a920e2dd79b0125560faf3807}{draw}} (sf\+::\+Render\+Target \&target, sf\+::\+Render\+States states) const
+\begin{DoxyCompactList}\small\item\em Draw the game object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_aaf7740bd2bc2f463c46a0c9f69e34b83}\label{class_game_object_aaf7740bd2bc2f463c46a0c9f69e34b83}} 
+virtual bool \mbox{\hyperlink{class_game_object_aaf7740bd2bc2f463c46a0c9f69e34b83}{contains}} (const sf\+::\+Vector2f pos)=0
+\begin{DoxyCompactList}\small\item\em Does the point lay within the bounds of the object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_a5dd52b78d80de9b45287b2bc0299730a}{mouse\+Enter}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Action to run when the mouse enters. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_a31acad9095c16c356b3cfbf1d9a95503}{mouse\+Leave}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Action to run when the mouse leaves. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_a2758a2035ee93ef405d0b1cb4068ce17}{mouse\+Press}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Action to run when the mouse presses the object. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_af76373a9e0242f4860b932cc81d4f4fb}{mouse\+Release}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game)
+\begin{DoxyCompactList}\small\item\em Action to run when the mouse releases the object. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_aa31f653d18dbd23439ec6c131c06250f}{key\+Press}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game, const int key)
+\begin{DoxyCompactList}\small\item\em Action to run when a key is pressed. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_a3ea6b12576af812470f9cd74f20d7a44}{key\+Release}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game, const int key)
+\begin{DoxyCompactList}\small\item\em Action to run when a key is released. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_game_object_aaf18f570c847ed0133c1f2a8e32b337a}{animation\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Animation update for the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a7d45aca280e5d79408cb70b6d8689ff0}\label{class_game_object_a7d45aca280e5d79408cb70b6d8689ff0}} 
+virtual void \mbox{\hyperlink{class_game_object_a7d45aca280e5d79408cb70b6d8689ff0}{update}} (\mbox{\hyperlink{class_game}{Game}} $\ast$game)=0
+\begin{DoxyCompactList}\small\item\em Update the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_object_a6de57342e9d37c35b3aa918dc5cc883a}\label{class_game_object_a6de57342e9d37c35b3aa918dc5cc883a}} 
+std\+::string \mbox{\hyperlink{class_game_object_a6de57342e9d37c35b3aa918dc5cc883a}{m\+\_\+name}} = \char`\"{}Default\char`\"{}
+\begin{DoxyCompactList}\small\item\em The name of the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ac6205b78d1a3168b3d66d20706772a13}\label{class_game_object_ac6205b78d1a3168b3d66d20706772a13}} 
+bool \mbox{\hyperlink{class_game_object_ac6205b78d1a3168b3d66d20706772a13}{m\+\_\+draw}} = true
+\begin{DoxyCompactList}\small\item\em Bool dictating whether to draw the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_ad0250090f32b6b17db78ce922b20c547}\label{class_game_object_ad0250090f32b6b17db78ce922b20c547}} 
+bool \mbox{\hyperlink{class_game_object_ad0250090f32b6b17db78ce922b20c547}{m\+\_\+enabled}} = true
+\begin{DoxyCompactList}\small\item\em Bool dictating whether to update the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_af161285f76e8766e6081ba2a7cbd6a26}\label{class_game_object_af161285f76e8766e6081ba2a7cbd6a26}} 
+bool \mbox{\hyperlink{class_game_object_af161285f76e8766e6081ba2a7cbd6a26}{m\+\_\+marked\+Deletion}} = false
+\begin{DoxyCompactList}\small\item\em Bool dictating whether to schedule the object for deletion. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a803d8d5830d51f1a03fcf23a939e7245}\label{class_game_object_a803d8d5830d51f1a03fcf23a939e7245}} 
+bool \mbox{\hyperlink{class_game_object_a803d8d5830d51f1a03fcf23a939e7245}{m\+\_\+animated}} = false
+\begin{DoxyCompactList}\small\item\em Bool dictating whether to animate the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_object_a3237da8e167a7a3a2a08337f6053b8f3}\label{class_game_object_a3237da8e167a7a3a2a08337f6053b8f3}} 
+sf\+::\+Drawable $\ast$ \mbox{\hyperlink{class_game_object_a3237da8e167a7a3a2a08337f6053b8f3}{m\+\_\+drawable}}
+\begin{DoxyCompactList}\small\item\em The S\+F\+ML shape of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_game_object}{Game\+Object}}. 
+
+A \mbox{\hyperlink{class_game_object}{Game\+Object}} Class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}\label{class_game_object_a0348e3ee2e83d56eafca7a3547f432c4}} 
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor() \mbox{\Hypertarget{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}\label{class_game_object_ab82dfdb656f9051c0587e6593b2dda97}} 
+\index{GameObject@{GameObject}!````~GameObject@{$\sim$GameObject}}
+\index{````~GameObject@{$\sim$GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$GameObject()}{~GameObject()}}
+{\footnotesize\ttfamily Game\+Object\+::$\sim$\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Destructor() 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_object_aaf18f570c847ed0133c1f2a8e32b337a}\label{class_game_object_aaf18f570c847ed0133c1f2a8e32b337a}} 
+\index{GameObject@{GameObject}!animationUpdate@{animationUpdate}}
+\index{animationUpdate@{animationUpdate}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{animationUpdate()}{animationUpdate()}}
+{\footnotesize\ttfamily void Game\+Object\+::animation\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Animation update for the object. 
+
+\mbox{\hyperlink{class_game_object_aaf18f570c847ed0133c1f2a8e32b337a}{animation\+Update()}} 
+
+Reimplemented in \mbox{\hyperlink{class_player_adfbf4c6a43f12a75ac1764304dcf04d9}{Player}}, and \mbox{\hyperlink{class_enemy_a04197457e42288cd42535c30ff36745a}{Enemy}}.
+
+\mbox{\Hypertarget{class_game_object_aa6d7650a920e2dd79b0125560faf3807}\label{class_game_object_aa6d7650a920e2dd79b0125560faf3807}} 
+\index{GameObject@{GameObject}!draw@{draw}}
+\index{draw@{draw}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Game\+Object\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target,  }\item[{sf\+::\+Render\+States}]{states }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw the game object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & a sf\+::\+Render\+Target \& -\/ A reference to the Render\+Target \\
+\hline
+{\em states} & a sf\+::\+Render\+States -\/ A render state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_a4c07ce9dae9bc98d442f80266d03644e}\label{class_game_object_a4c07ce9dae9bc98d442f80266d03644e}} 
+\index{GameObject@{GameObject}!getAnimated@{getAnimated}}
+\index{getAnimated@{getAnimated}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{getAnimated()}{getAnimated()}}
+{\footnotesize\ttfamily bool Game\+Object\+::get\+Animated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get whether the object is animated. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the object animated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_a951d8a02622f8224bf97284c676b3881}\label{class_game_object_a951d8a02622f8224bf97284c676b3881}} 
+\index{GameObject@{GameObject}!getDraw@{getDraw}}
+\index{getDraw@{getDraw}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{getDraw()}{getDraw()}}
+{\footnotesize\ttfamily bool Game\+Object\+::get\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get whether the object is drawn. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Should the object be drawn 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_ab55f3ac16ed30a44f79f1bd95f88b1ea}\label{class_game_object_ab55f3ac16ed30a44f79f1bd95f88b1ea}} 
+\index{GameObject@{GameObject}!getDrawable@{getDrawable}}
+\index{getDrawable@{getDrawable}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{getDrawable()}{getDrawable()}}
+{\footnotesize\ttfamily sf\+::\+Drawable $\ast$ Game\+Object\+::get\+Drawable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the S\+F\+ML drawable component. 
+
+\begin{DoxyReturn}{Returns}
+a sf\+::\+Drawable$\ast$ -\/ The S\+F\+ML drawable component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_abff095300779ab83a30dd21120271d9e}\label{class_game_object_abff095300779ab83a30dd21120271d9e}} 
+\index{GameObject@{GameObject}!getEnabled@{getEnabled}}
+\index{getEnabled@{getEnabled}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{getEnabled()}{getEnabled()}}
+{\footnotesize\ttfamily bool Game\+Object\+::get\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get whether the object is enabled. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the object enabled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_a7b5b5ca6b3754cdfb175cd1938c77f10}\label{class_game_object_a7b5b5ca6b3754cdfb175cd1938c77f10}} 
+\index{GameObject@{GameObject}!getName@{getName}}
+\index{getName@{getName}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Game\+Object\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of the object. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::string -\/ The name of the object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_a6edd1d59c8207a8e36cc8560d0696a03}\label{class_game_object_a6edd1d59c8207a8e36cc8560d0696a03}} 
+\index{GameObject@{GameObject}!getScheduleForDeletion@{getScheduleForDeletion}}
+\index{getScheduleForDeletion@{getScheduleForDeletion}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{getScheduleForDeletion()}{getScheduleForDeletion()}}
+{\footnotesize\ttfamily bool Game\+Object\+::get\+Schedule\+For\+Deletion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get whether the object is scheduled for deletion. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the object scheduled for deletion 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_object_aa31f653d18dbd23439ec6c131c06250f}\label{class_game_object_aa31f653d18dbd23439ec6c131c06250f}} 
+\index{GameObject@{GameObject}!keyPress@{keyPress}}
+\index{keyPress@{keyPress}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{keyPress()}{keyPress()}}
+{\footnotesize\ttfamily void Game\+Object\+::key\+Press (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game,  }\item[{const int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Action to run when a key is pressed. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+{\em key} & a const int -\/ The key pressed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_player_ad70091a017479ff3208c39131f57f338}{Player}}.
+
+\mbox{\Hypertarget{class_game_object_a3ea6b12576af812470f9cd74f20d7a44}\label{class_game_object_a3ea6b12576af812470f9cd74f20d7a44}} 
+\index{GameObject@{GameObject}!keyRelease@{keyRelease}}
+\index{keyRelease@{keyRelease}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{keyRelease()}{keyRelease()}}
+{\footnotesize\ttfamily void Game\+Object\+::key\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game,  }\item[{const int}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Action to run when a key is released. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+{\em key} & a const int -\/ The key released \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_player_a730c7d8eb4bc24e946ead0aeb82a58e3}{Player}}.
+
+\mbox{\Hypertarget{class_game_object_a5dd52b78d80de9b45287b2bc0299730a}\label{class_game_object_a5dd52b78d80de9b45287b2bc0299730a}} 
+\index{GameObject@{GameObject}!mouseEnter@{mouseEnter}}
+\index{mouseEnter@{mouseEnter}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{mouseEnter()}{mouseEnter()}}
+{\footnotesize\ttfamily void Game\+Object\+::mouse\+Enter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Action to run when the mouse enters. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_dynamic_text_a31905e0e7c0b9683726ca71f6f70d00e}{Dynamic\+Text}}.
+
+\mbox{\Hypertarget{class_game_object_a31acad9095c16c356b3cfbf1d9a95503}\label{class_game_object_a31acad9095c16c356b3cfbf1d9a95503}} 
+\index{GameObject@{GameObject}!mouseLeave@{mouseLeave}}
+\index{mouseLeave@{mouseLeave}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{mouseLeave()}{mouseLeave()}}
+{\footnotesize\ttfamily void Game\+Object\+::mouse\+Leave (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Action to run when the mouse leaves. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_dynamic_text_af6bfcec2308d330069e8c71412b29f2d}{Dynamic\+Text}}.
+
+\mbox{\Hypertarget{class_game_object_a2758a2035ee93ef405d0b1cb4068ce17}\label{class_game_object_a2758a2035ee93ef405d0b1cb4068ce17}} 
+\index{GameObject@{GameObject}!mousePress@{mousePress}}
+\index{mousePress@{mousePress}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{mousePress()}{mousePress()}}
+{\footnotesize\ttfamily void Game\+Object\+::mouse\+Press (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Action to run when the mouse presses the object. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_af76373a9e0242f4860b932cc81d4f4fb}\label{class_game_object_af76373a9e0242f4860b932cc81d4f4fb}} 
+\index{GameObject@{GameObject}!mouseRelease@{mouseRelease}}
+\index{mouseRelease@{mouseRelease}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{mouseRelease()}{mouseRelease()}}
+{\footnotesize\ttfamily void Game\+Object\+::mouse\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game}{Game}} $\ast$}]{game }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Action to run when the mouse releases the object. Must attach to the \mbox{\hyperlink{class_event_listener}{Event\+Listener}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a Game$\ast$ -\/ A pointer to the game \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_dynamic_text_a449021dffcf4385d35491e6852d795b2}{Dynamic\+Text}}.
+
+\mbox{\Hypertarget{class_game_object_afdf576650ff4d28e988e7f6081e05c8d}\label{class_game_object_afdf576650ff4d28e988e7f6081e05c8d}} 
+\index{GameObject@{GameObject}!scheduleForDeletion@{scheduleForDeletion}}
+\index{scheduleForDeletion@{scheduleForDeletion}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{scheduleForDeletion()}{scheduleForDeletion()}}
+{\footnotesize\ttfamily void Game\+Object\+::schedule\+For\+Deletion (\begin{DoxyParamCaption}\item[{const bool}]{destroy }\end{DoxyParamCaption})}
+
+
+
+Schedule the object for deletion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destroy} & a const bool -\/ Destroy the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_aa678fd490a71d7e867ce211290eb44a0}\label{class_game_object_aa678fd490a71d7e867ce211290eb44a0}} 
+\index{GameObject@{GameObject}!setDraw@{setDraw}}
+\index{setDraw@{setDraw}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{setDraw()}{setDraw()}}
+{\footnotesize\ttfamily void Game\+Object\+::set\+Draw (\begin{DoxyParamCaption}\item[{const bool}]{draw }\end{DoxyParamCaption})}
+
+
+
+Set whether the object is drawn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em draw} & a const bool -\/ Draw the object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_game_object_abaf0d432435ac9034e559d73d371b6b8}\label{class_game_object_abaf0d432435ac9034e559d73d371b6b8}} 
+\index{GameObject@{GameObject}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily void Game\+Object\+::set\+Enabled (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})}
+
+
+
+Set whether the object is enabled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a const bool -\/ Enable the object \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/\+Game\+Objects/\mbox{\hyperlink{_game_object_8h}{Game\+Object.\+h}}\item 
+C\+:/doc/src/src/\+Game\+Objects/\mbox{\hyperlink{_game_object_8cpp}{Game\+Object.\+cpp}}\end{DoxyCompactItemize}
